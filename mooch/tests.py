@@ -9,6 +9,7 @@ FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "fixtures")
 class MoochTest(unittest.TestCase):
 
     def setUp(self):
+        app.testing = True
         self.app = app.test_client()
 
     def get_json(self, path, **params):
