@@ -5,7 +5,8 @@ from mooch.app import app
 
 FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "fixtures")
 
-class Test_GithubHook(unittest.TestCase):
+
+class MoochTest(unittest.TestCase):
 
     def setUp(self):
         self.app = app.test_client()
@@ -25,6 +26,9 @@ class Test_GithubHook(unittest.TestCase):
         data = json.dumps(data)
         headers = [('Content-Type', 'application/json')]
         return self.app.post(path, data=data, headers=headers)
+
+
+class Test_GithubHook(MoochTest):
 
     def test_should_store_last_commit_time(self):
 
