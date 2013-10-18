@@ -1,4 +1,5 @@
 # encoding: utf-8
+import datetime
 import requests
 from BeautifulSoup import BeautifulSoup
 
@@ -13,7 +14,7 @@ def parse(html):
 
         {
             "id": unicode,  # unique ID of submission
-            "date": unicode,
+            "date": datetime.datetime,
             "okay": bool
         }
 
@@ -31,7 +32,7 @@ def parse(html):
 
         submissions.append({
             "id": submission_id,
-            "date": date,
+            "date": datetime.datetime.strptime(date, "%d.%m.%Y %H:%M:%S"),
             "okay": okay})
 
     return submissions
