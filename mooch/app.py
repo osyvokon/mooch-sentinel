@@ -1,24 +1,16 @@
 import sqlite3
 from flask import Flask, jsonify, request
+import pymongo
+from mooch.engine import Engine
+
 app = Flask(__name__)
 
 
 def init_db(db):
-
-    db.execute("""
-        CREATE TABLE if not exists events (
-            id INTEGER PRIMARY KEY,
-            eventType TEXT,
-            eventTime datetime,
-            data BLOB,
-            insertTime datetime default current_timestamp);
-        """)
-
-    # FIXME: not exists
-
+    pass
 
 def get_db():
-    return sqlite3.connect("/tmp/mooch.sqlite", isolation_level=None)
+    return pymongo.MongoClient("localhost:27017").mooch
 
 @app.route("/status")
 def status():
@@ -43,5 +35,9 @@ def github_hook():
 
 
 if __name__ == '__main__':
-    init_db(get_db())
+    db = get_db()
+    init_db(db)
+    engine = Engine(db)
+    engine.start()
+
     app.run(debug=True, host='0.0.0.0', port=5000)

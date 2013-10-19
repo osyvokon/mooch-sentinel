@@ -3,6 +3,17 @@ import datetime
 import requests
 from BeautifulSoup import BeautifulSoup
 
+class Codeforces(object):
+    goal_id = "codeforces"
+    description = "Solve codeforces.ru programming challenge. "
+
+    @staticmethod
+    def from_dict(cfg):
+        return Codeforces()
+
+    def execute(self):
+        print "Codeforces!"
+
 def download_and_parse(user_id):
     """Return parsed results for `user_id`. """
 
