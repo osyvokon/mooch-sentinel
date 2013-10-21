@@ -29,6 +29,7 @@ class MoochTest(unittest.TestCase):
         return self.app.post(path, data=data, headers=headers)
 
 
+@unittest.skip('Deprecate or update Github hooks')
 class Test_GithubHook(MoochTest):
 
     def test_should_store_last_commit_time(self):
