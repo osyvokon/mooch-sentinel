@@ -37,6 +37,7 @@ def github_hook():
 if __name__ == '__main__':
     db = get_db()
     init_db(db)
+
     engine = Engine(db)
     engine.start()
 

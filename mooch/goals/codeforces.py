@@ -7,12 +7,20 @@ class Codeforces(object):
     goal_id = "codeforces"
     description = "Solve codeforces.ru programming challenge. "
 
+    def __init__(self, codeforces_login):
+        self.login = codeforces_login
+
     @staticmethod
     def from_dict(cfg):
-        return Codeforces()
+        login = cfg.get("codeforcesLogin")
+        if not login:
+            raise ValueError("`codeforcesLogin` is a mandatory field")
+        return Codeforces(login)
 
-    def execute(self):
-        print "Codeforces!"
+    def check_achievements(self):
+        attempts = download_and_parse(self.login)
+        success_dates = {x['date'] for x in attempts if x['okay']}
+        return [{"date": dt} for dt in success_dates]
 
 def download_and_parse(user_id):
     """Return parsed results for `user_id`. """

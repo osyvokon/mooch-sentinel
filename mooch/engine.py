@@ -24,14 +24,14 @@ class Engine(object):
 
     def start(self):
         for user in self.db.users.find():
-            self.sched.add_interval_job(self.check_user_goals,
+            self.sched.add_interval_job(self.update_user_achievements,
                     minutes=self.poll_rate + random.randint(-2, 2),
                     kwargs={"user_id": user['_id']})
 
         logging.getLogger("apscheduler").addHandler(logging.StreamHandler())
         self.sched.start()
 
-    def check_user_goals(self, user_id):
+    def update_user_achievements(self, user_id):
         log.debug("Going to check goals for user %s", user_id)
 
         user = self.db.users.find_one({"_id": user_id})
@@ -46,6 +46,10 @@ class Engine(object):
                 self.error("Error on checking goal: %s", e)
                 continue
 
-            else:
-                g.execute()
+            achievements = g.check_achievements()
+            self.db.achievements.update(
+                    {"goal": goal},
+                    {"$addToSet": {"achievements": {"$each": achievements}}},
+                    upsert=True)
+
 
