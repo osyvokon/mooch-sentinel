@@ -16,5 +16,6 @@ setup(
         'requests',
         'BeautifulSoup',
         'apscheduler',
+        'pymongo',
     ],
 )
