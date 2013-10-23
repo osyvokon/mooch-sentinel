@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import pymongo
 from mooch.engine import Engine
 
@@ -11,6 +11,10 @@ def init_db(db):
 
 def get_db():
     return pymongo.MongoClient("localhost:27017").mooch
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route("/status")
 def status():
