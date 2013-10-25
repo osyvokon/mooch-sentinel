@@ -29,31 +29,5 @@ class MoochTest(unittest.TestCase):
         return self.app.post(path, data=data, headers=headers)
 
 
-@unittest.skip('Deprecate or update Github hooks')
-class Test_GithubHook(MoochTest):
-
-    def test_should_store_last_commit_time(self):
-
-        # When issuing Github POST request
-        payload = json.load(open(os.path.join(FIXTURES_DIR, "github-hook.json")))
-        self.post_json("/hooks/github", payload)
-
-        # Then last commit time should be updated
-        status = self.get_json("/status")
-        self.assertEqual(status['GitHub']['lastCommitTime'],
-                        "2013-03-12T08:14:29-07:00")
-    
-    def test_should_have_null_last_commit_time_before_first_hook_issued(self):
-
-        # Given no Github POST requests done yet
-        pass
-
-        # When requesting server status
-        status = self.get_json("/status")
-
-        # Then last commit time should be null
-        self.assertIsNone(status.get("GitHub", {}).get("lastCommitTime"))
-
-
 if __name__ == '__main__':
     unittest.main()
