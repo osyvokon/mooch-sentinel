@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from flask import Flask, jsonify, request, render_template
 import pymongo
 from mooch.engine import Engine
