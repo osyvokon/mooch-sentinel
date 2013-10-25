@@ -1,5 +1,6 @@
 import random
 import logging
+import datetime
 from apscheduler.scheduler import Scheduler
 from mooch.goals import Goal, InvalidGoalError
 
@@ -31,6 +32,18 @@ class Engine(object):
         logging.getLogger("apscheduler").addHandler(logging.StreamHandler())
         self.sched.start()
 
+    def user_status(self, user_id, date=None):
+        date = date or datetime.datetime.now()
+        achievements = self.db.achievements.find({"user": user_id})
+        goals = [{
+            "goal": a['goal'],
+            "achieved": goal_achieved(a, date)
+            } for a in achievements]
+        okay = all(goal['achieved'] for goal in goals)
+
+        return {"okay": okay,
+                "goals": goals}
+
     def update_user_achievements(self, user_id):
         log.debug("Going to check goals for user %s", user_id)
 
@@ -61,3 +74,6 @@ class Engine(object):
 
         return goals
 
+def goal_achieved(achievements, date):
+    d = date.date()
+    return any(a['date'].date() == d for a in achievements['achievements'])
