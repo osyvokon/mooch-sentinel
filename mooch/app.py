@@ -16,9 +16,9 @@ def get_db():
 def index():
     return render_template("index.html")
 
-@app.route("/status")
-def status():
-    status = {}
+@app.route("/status/<string:user>")
+def status(user):
+    status = engine.user_status(user)
 
     return jsonify(status)
 
@@ -26,6 +26,7 @@ if __name__ == '__main__':
     db = get_db()
     init_db(db)
 
+    global engine
     engine = Engine(db)
     engine.start()
 
