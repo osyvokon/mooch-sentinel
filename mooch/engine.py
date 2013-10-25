@@ -34,22 +34,30 @@ class Engine(object):
     def update_user_achievements(self, user_id):
         log.debug("Going to check goals for user %s", user_id)
 
-        user = self.db.users.find_one({"_id": user_id})
-        if user is None:
-            self.warning("User `%s` not found", user_id)
-            return
-
-        for goal in user.get('goals', []):
-            try:
-                g = Goal.from_dict(goal)
-            except InvalidGoalError as e:
-                self.error("Error on checking goal: %s", e)
-                continue
-
-            achievements = g.check_achievements()
+        for goal in self.user_goals(user_id):
+            achievements = goal.check_achievements()
             self.db.achievements.update(
-                    {"goal": goal},
+                    {"user": user_id, "goal": goal},
                     {"$addToSet": {"achievements": {"$each": achievements}}},
                     upsert=True)
 
+    def user_goals(self, user_id):
+        """List of user's goals (``Goal`` objects). """
+
+        user = self.db.users.find_one({"_id": user_id})
+        if user is None:
+            log.warning("User `%s` not found", user_id)
+            return []
+
+        goals = []
+        for goal_spec in user.get('goals', []):
+            try:
+                goal = Goal.from_dict(goal_spec)
+            except InvalidGoalError as e:
+                log.error("Error reading goal config: %s", e)
+                continue
+            else:
+                goals.append(goal)
+
+        return goals
 
