@@ -11,5 +11,6 @@
     "browser_action": {
         "default_title": "Mooch Sentinel",
         "default_popup": "popup.html"
-    }
+    },
+    "options_page": "options.html"
 }

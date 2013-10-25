@@ -1,5 +1,3 @@
-var user = 'silver';
-
 var MoochSentinel = {
 
     render: function(status) {
@@ -7,6 +5,12 @@ var MoochSentinel = {
     },
 
     requestStatus: function() {
+        var user = localStorage['moochLogin'];
+        if (!user) {
+            document.getElementById("status").innerText = "Please, set user login on options page";
+            return;
+        }
+
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "http://mooch.co.vu:5000/status/" + user, true);
         xhr.onreadystatechange = function() {
