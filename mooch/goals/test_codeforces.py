@@ -1,7 +1,7 @@
 import os
 import unittest
 import datetime
-from mooch import codeforces
+from mooch.goals import codeforces
 
 FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "fixtures")
 
