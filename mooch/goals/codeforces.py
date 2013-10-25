@@ -17,6 +17,13 @@ class Codeforces(object):
             raise ValueError("`codeforcesLogin` is a mandatory field")
         return Codeforces(login)
 
+    def to_dict(self):
+        return {
+                "goal": self.goal_id,
+                "description": "Solve at least 1 codeforces.ru challenge per day",
+                "codeforcesLogin": self.login,
+            }
+
     def check_achievements(self):
         attempts = download_and_parse(self.login)
         success_dates = {x['date'] for x in attempts if x['okay']}

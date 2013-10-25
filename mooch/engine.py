@@ -50,7 +50,7 @@ class Engine(object):
         for goal in self.user_goals(user_id):
             achievements = goal.check_achievements()
             self.db.achievements.update(
-                    {"user": user_id, "goal": goal},
+                    {"user": user_id, "goal": goal.to_dict()},
                     {"$addToSet": {"achievements": {"$each": achievements}}},
                     upsert=True)
 
