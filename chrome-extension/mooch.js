@@ -1,7 +1,17 @@
 var MoochSentinel = {
 
     render: function(status) {
-      document.getElementById("status").innerText = status.okay? "Okay!" : "Blocked";
+      if (status.okay) {
+        var msg = "Okay";
+        var color = [255, 0, 0, 0];
+      } else {
+        var msg = "Blocked";
+        var color = [0, 255, 0, 0];
+      }
+     
+      document.getElementById("status").innerText = msg;
+      chrome.browserAction.setBadgeText({text: msg});
+      chrome.browserAction.setBadgeColor({color: color});
     },
 
     requestStatus: function() {
