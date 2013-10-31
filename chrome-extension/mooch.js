@@ -30,11 +30,28 @@ var MoochSentinel = {
             }
         }
         xhr.send();
+    },
+
+    requestGitHubStatus: function () {
+        var user = localStorage['gitHubLogin'];
+        var el = document.getElementById("ghStatus");
+        if (!user) {
+            el.innerText = "Please, set GitHub user login on options page";
+            return;
+        }
+        GitHub.requestStatus(function (isOk) {
+            if (isOk) {
+                el.innerText = "GitHub OK";
+            }
+            else {
+                el.innerText = "GitHub NOT OK";
+            }
+        });
     }
 }
 
 
 document.addEventListener("DOMContentLoaded", function () {
     MoochSentinel.requestStatus();
-    GitHub.requestStatus();
+    MoochSentinel.requestGitHubStatus();
 });
