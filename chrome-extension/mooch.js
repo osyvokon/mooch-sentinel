@@ -47,11 +47,20 @@ var MoochSentinel = {
                 el.innerText = "GitHub NOT OK";
             }
         });
+    },
+
+    refreshStatuses: function() {
+        this.requestStatus();
+        this.requestGitHubStatus();
     }
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    MoochSentinel.requestStatus();
-    MoochSentinel.requestGitHubStatus();
+    console.log("refreshing statuses for the first time...");
+    MoochSentinel.refreshStatuses();
+//    console.log("adding refresh listener...");
+//    moochRefreshFunction = window.setInterval(function () {
+//        console.log("repeating status call...");
+//        MoochSentinel.refreshStatuses();
+//    }, 60 * 1000);
 });
