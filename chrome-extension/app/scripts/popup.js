@@ -1,3 +1,4 @@
+'use strict';
 var MoochSentinel = {
 
     render: function (status) {
@@ -11,7 +12,7 @@ var MoochSentinel = {
 
         document.getElementById("status").innerText = msg;
         chrome.browserAction.setBadgeText({text: msg});
-        // chrome.browserAction.setBadgeColor({color: color});
+        // chrome.browserAction.setBadgeColor({color: color}); // FIXME
     },
 
     requestStatus: function () {
