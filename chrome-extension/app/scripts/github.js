@@ -4,6 +4,7 @@ var GitHub = {
     repositories: null,
 
     requestStatus: function () {
+        console.log('GitHub requestStatus');
         this.user = localStorage['gitHubLogin'];
         this.initRepositories(this.checkLastCommit);
     },
@@ -73,6 +74,7 @@ var GitHub = {
             var yesterday = new Date();
             yesterday.setDate(yesterday.getDate() - 1);
             if (lastCommitDate >= yesterday) {
+                console.log('GitHub commit date good!');
                 me.ok = true;
                 return;
             }

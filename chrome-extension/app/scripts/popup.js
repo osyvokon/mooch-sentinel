@@ -17,16 +17,19 @@ var MoochSentinel = {
     },
 
     requestCodeForces: function () {
+        console.log('requestCodeForces...');
         var el = document.getElementById("status");
         if (!CodeForces.hasLogin()) {
             el.innerText = "Please set CodeForces user login on options page";
             return false;
         }
         el.innerText = CodeForces.ok ? "CodeForces OK" : "CodeForces blocked";
+        console.log('requestCodeForces: ' + CodeForces.ok);
         return CodeForces.ok;
     },
 
     requestGitHub: function () {
+        console.log('requestGitHub...');
         var user = localStorage['gitHubLogin'];
         var el = document.getElementById("ghStatus");
         if (!GitHub.hasLogin()) {
@@ -34,10 +37,12 @@ var MoochSentinel = {
             return false;
         }
         el.innerText = GitHub.ok ? "GitHub OK" : "GitHub blocked";
+        console.log('requestGitHub: ' + GitHub.ok);
         return GitHub.ok;
     },
 
     refresh: function() {
+        console.log('Mooch refresh...');
         MoochSentinel.ok = MoochSentinel.requestCodeForces() || MoochSentinel.requestGitHub();
         MoochSentinel.render();
     }

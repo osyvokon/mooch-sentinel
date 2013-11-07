@@ -6,7 +6,9 @@ var CodeForces = {
     },
 
     requestStatus: function () {
+        console.log('CodeForces requestStatus');
         var me = this;
+        me.ok = false;
         var user = localStorage['moochLogin'];
         if (user) {
             var xhr = new XMLHttpRequest();
@@ -15,10 +17,10 @@ var CodeForces = {
                 if (xhr.readyState == 4) {
                     var status = JSON.parse(xhr.responseText);
                     me.ok = !!status.okay;
+                    return;
                 }
             }
             xhr.send();
         }
-
     }
 }
