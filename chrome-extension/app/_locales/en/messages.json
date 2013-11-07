@@ -1,10 +1,10 @@
 {
   "appName": {
     "message": "Mooch Sentinel",
-    "description": "The name of the application"
+    "description": "No mooching unless your (geeky) goals done"
   },
   "appDescription": {
     "message": "No mooching unless your (geeky) goals done",
-    "description": "The description of the application"
+    "description": "Noone said it would be easy"
   }
 }

@@ -2,12 +2,14 @@ var GitHub = {
     baseUrl: 'https://api.github.com',
     user: null,
     repositories: null,
-    callback: null,
 
-    requestStatus: function (callback) {
-        this.callback = callback;
+    requestStatus: function () {
         this.user = localStorage['gitHubLogin'];
         this.initRepositories(this.checkLastCommit);
+    },
+
+    hasLogin: function() {
+        return !!localStorage['gitHubLogin'];
     },
 
     initRepositories: function (callback) {
@@ -71,14 +73,13 @@ var GitHub = {
             var yesterday = new Date();
             yesterday.setDate(yesterday.getDate() - 1);
             if (lastCommitDate >= yesterday) {
-                me.callback.call(me, true);
+                me.ok = true;
                 return;
             }
         }
         // no hands, no cookies
         console.log('no hands, no cookies');
         me.ok = false;
-        me.callback.call(me, me.ok);
     },
 
     getJsonData: function (url, async, callback) {

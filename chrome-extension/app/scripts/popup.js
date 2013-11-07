@@ -1,67 +1,48 @@
 'use strict';
 var MoochSentinel = {
 
-    render: function (status) {
-        if (status.okay) {
+    ok: false,
+
+    render: function () {
+        if (this.ok) {
             var msg = "Okay";
             var color = [255, 0, 0, 0];
         } else {
             var msg = "Blocked";
             var color = [0, 255, 0, 0];
         }
-
         document.getElementById("status").innerText = msg;
         chrome.browserAction.setBadgeText({text: msg});
         // chrome.browserAction.setBadgeColor({color: color}); // FIXME
     },
 
-    requestStatus: function () {
-        var user = localStorage['moochLogin'];
-        if (!user) {
-            document.getElementById("status").innerText = "Please, set user login on options page";
-            return;
+    requestCodeForces: function () {
+        var el = document.getElementById("status");
+        if (!CodeForces.hasLogin()) {
+            el.innerText = "Please set CodeForces user login on options page";
+            return false;
         }
-
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://mooch.co.vu:5000/status/" + user, true);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4) {
-                var status = JSON.parse(xhr.responseText);
-                MoochSentinel.render(status);
-            }
-        }
-        xhr.send();
+        el.innerText = CodeForces.ok ? "CodeForces OK" : "CodeForces blocked";
+        return CodeForces.ok;
     },
 
-    requestGitHubStatus: function () {
+    requestGitHub: function () {
         var user = localStorage['gitHubLogin'];
         var el = document.getElementById("ghStatus");
-        if (!user) {
-            el.innerText = "Please, set GitHub user login on options page";
-            return;
+        if (!GitHub.hasLogin()) {
+            el.innerText = "Please set GitHub user login on options page";
+            return false;
         }
-        GitHub.requestStatus(function (isOk) {
-            if (isOk) {
-                el.innerText = "GitHub OK";
-            }
-            else {
-                el.innerText = "GitHub NOT OK";
-            }
-        });
+        el.innerText = GitHub.ok ? "GitHub OK" : "GitHub blocked";
+        return GitHub.ok;
     },
 
-    refreshStatuses: function() {
-        this.requestStatus();
-        this.requestGitHubStatus();
+    refresh: function() {
+        MoochSentinel.ok = MoochSentinel.requestCodeForces() || MoochSentinel.requestGitHub();
+        MoochSentinel.render();
     }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("refreshing statuses for the first time...");
-    MoochSentinel.refreshStatuses();
-//    console.log("adding refresh listener...");
-//    moochRefreshFunction = window.setInterval(function () {
-//        console.log("repeating status call...");
-//        MoochSentinel.refreshStatuses();
-//    }, 60 * 1000);
+    MoochSentinel.refresh();
 });
