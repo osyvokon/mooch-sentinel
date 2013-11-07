@@ -96,3 +96,4 @@ var GitHub = {
         xhr.send();
     }
 }
+
