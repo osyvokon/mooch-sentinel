@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
     chrome.alarms.clearAll();
     chrome.alarms.create("moochStatusRefresh", {
         when: Date.now() + 1,
-        periodInMinutes: 1
+        periodInMinutes: 5
     });
 });
 
