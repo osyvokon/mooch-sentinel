@@ -6,14 +6,16 @@ var MoochSentinel = {
     },
 
     isOk: function () {
-        var result = false;
-        for (var i = 0; i < this.statuses.length; i++) {
-            var status = this.statuses[i];
-            if (status) {
-                result = true;
-                break;
+        var me = this, result = false;
+        for (status in me.statuses) {
+            if (me.statuses.hasOwnProperty(status)) {
+                if (me.statuses[status]) {
+                    result = true;
+                    break;
+                }
             }
         }
+        console.log("Mooch statuses: " + me.statuses);
         console.log("Mooch status: " + result);
         return result;
     },
@@ -27,23 +29,26 @@ var MoochSentinel = {
 
     render: function () {
         console.log("mooch render...");
+        var color = null;
         if (this.isOk()) {
             var msg = "Okay";
-            var color = [255, 0, 0, 0];
+            color = "#0F0";
         } else {
             var msg = "Blocked";
-            var color = [0, 255, 0, 0];
+            color = "#F00";
         }
         this.setPopupElementText('status', '' + this.statuses.codeForces);
         this.setPopupElementText('ghStatus', '' + this.statuses.gitHub);
         chrome.browserAction.setBadgeText({text: msg});
-        // chrome.browserAction.setBadgeColor({color: color}); // FIXME
+        if (color) {
+            chrome.browserAction.setBadgeBackgroundColor({color: color});
+        }
     },
 
     checkCodeForcesLogin: function () {
         console.log('check CodeForces login...');
         var el = document.getElementById("status");
-        if (!CodeForces.hasLogin()) {
+        if (!localStorage['moochLogin']) {
             el.innerText = "Please set CodeForces user login on options page";
             return false;
         }
@@ -52,9 +57,8 @@ var MoochSentinel = {
 
     checkGitHubLogin: function () {
         console.log('check GitHub login...');
-        var user = localStorage['gitHubLogin'];
         var el = document.getElementById("ghStatus");
-        if (!GitHub.hasLogin()) {
+        if (!localStorage['gitHubLogin']) {
             el.innerText = "Please set GitHub user login on options page";
             return false;
         }

@@ -16,7 +16,6 @@
         "scripts": [
             "scripts/github.js",
             "scripts/codeforces.js",
-            "scripts/popup.js",
             "scripts/background.js"
         ]
     },
