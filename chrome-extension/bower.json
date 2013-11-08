@@ -1,6 +1,8 @@
 {
   "name": "mooch-sentinel",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "cal-heatmap": "~3.3.8"
+  },
   "devDependencies": {}
 }

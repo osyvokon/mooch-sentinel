@@ -43,6 +43,26 @@ var MoochSentinel = {
         if (color) {
             chrome.browserAction.setBadgeBackgroundColor({color: color});
         }
+
+        var data = {
+            "1383926200": 10
+        };
+        this.renderCalendar(data);
+    },
+
+    renderCalendar: function (data) {
+        var cal = new CalHeatMap();
+        var startDate = new Date();
+        startDate.setMonth(startDate.getMonth() - 1);
+        cal.init({
+            domain: "month",
+            range: 2,
+            start: startDate,
+            cellSize: 10,
+            cellRadius: 2,
+            highlight: "now",
+            data: data
+        });
     },
 
     checkCodeForcesLogin: function () {
