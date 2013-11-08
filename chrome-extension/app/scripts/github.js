@@ -9,7 +9,7 @@ var GitHub = {
         this.initRepositories(this.checkLastCommit);
     },
 
-    hasLogin: function() {
+    hasLogin: function () {
         return !!localStorage['gitHubLogin'];
     },
 
@@ -76,12 +76,14 @@ var GitHub = {
             if (lastCommitDate >= yesterday) {
                 console.log('GitHub commit date good!');
                 me.ok = true;
+                chrome.runtime.sendMessage({gitHub: true, ok: me.ok});
                 return;
             }
         }
         // no hands, no cookies
         console.log('no hands, no cookies');
         me.ok = false;
+        chrome.runtime.sendMessage({gitHub: true, ok: me.ok});
     },
 
     getJsonData: function (url, async, callback) {

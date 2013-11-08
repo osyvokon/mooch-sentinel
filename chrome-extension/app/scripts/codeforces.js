@@ -17,6 +17,7 @@ var CodeForces = {
                 if (xhr.readyState == 4) {
                     var status = JSON.parse(xhr.responseText);
                     me.ok = !!status.okay;
+                    chrome.runtime.sendMessage({codeForces: true, ok: me.ok});
                     return;
                 }
             }
