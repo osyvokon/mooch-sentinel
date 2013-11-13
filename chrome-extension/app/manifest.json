@@ -16,6 +16,7 @@
         "scripts": [
             "scripts/github.js",
             "scripts/codeforces.js",
+            "scripts/mooch.js",
             "scripts/background.js"
         ]
     },

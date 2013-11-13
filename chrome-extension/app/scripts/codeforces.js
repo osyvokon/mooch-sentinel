@@ -6,7 +6,6 @@ var CodeForces = {
     },
 
     requestStatus: function () {
-        console.log('CodeForces requestStatus');
         var me = this;
         me.ok = false;
         var user = localStorage['moochLogin'];
@@ -15,10 +14,15 @@ var CodeForces = {
             xhr.open("GET", "http://mooch.co.vu:5000/status/" + user, true);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {
-                    var status = JSON.parse(xhr.responseText);
-                    me.ok = !!status.okay;
-                    chrome.runtime.sendMessage({codeForces: true, ok: me.ok});
-                    return;
+                    if (xhr.responseText) {
+                        var status = JSON.parse(xhr.responseText);
+                        me.ok = !!status.okay;
+                        chrome.runtime.sendMessage({codeForces: true, ok: me.ok});
+                    }
+                    else {
+                        console.log('Empty CodeForces response!');
+                        chrome.runtime.sendMessage({codeForces: true, ok: me.ok});
+                    }
                 }
             }
             xhr.send();
