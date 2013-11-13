@@ -2,7 +2,8 @@
   "name": "mooch-sentinel",
   "version": "0.0.0",
   "dependencies": {
-    "cal-heatmap": "~3.3.8"
+    "cal-heatmap": "~3.3.8",
+    "jquery": "~2.0.3"
   },
   "devDependencies": {}
 }
