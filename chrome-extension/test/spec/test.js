@@ -1,11 +1,13 @@
 /*global describe, it */
 'use strict';
-(function () {
-    describe('Give it some context', function () {
-        describe('maybe a bit more context here', function () {
-            it('should run here few assertions', function () {
 
-            });
+(function () {
+    describe('Codeforces.ru goal', function () {
+        it('should extract solved challenges from codeforce.ru status page', function() {
+            var submissions = CodeForces.parseSubmissionsPage('fixtures/codeforces.html');
+            expect(submissions).to.be.a("Array");
+            expect(submissions).to.be.not.empty();
         });
     });
+
 })();
