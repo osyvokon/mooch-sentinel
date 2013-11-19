@@ -16,7 +16,7 @@ var GitHub = {
     initRepositories: function (callback) {
         var me = this;
         if (me.user) {
-            var url = me.baseUrl + "/users/" + me.user + "/repos";
+            var url = me.baseUrl + '/users/' + me.user + '/repos';
             this.getJsonData(url, true, function (data) {
                 if (data && data.length > 0) {
                     var repositories = [];
@@ -25,7 +25,7 @@ var GitHub = {
                         repositories.push(repo.name);
                     }
                     me.repositories = repositories;
-                    console.log("GitHub repositories: " + JSON.stringify(me.repositories));
+                    console.log('GitHub repositories: ' + JSON.stringify(me.repositories));
                     if (callback) {
                         callback.call(me);
                     }
@@ -41,7 +41,7 @@ var GitHub = {
     checkLastCommit: function () {
         console.log('Getting last commit...');
         var me = this, lastCommitDate = null;
-        console.log("GitHub repositories: " + JSON.stringify(me.repositories));
+        console.log('GitHub repositories: ' + JSON.stringify(me.repositories));
         if (me.repositories) {
             for (var i = 0; i < me.repositories.length; i++) {
                 var repo = me.repositories[i];
@@ -64,7 +64,7 @@ var GitHub = {
                         }
                     }
                     else {
-                        console.log("No GitHub commits found! User: " + me.user + ", repo: " + repo);
+                        console.log('No GitHub commits found! User: ' + me.user + ', repo: ' + repo);
                     }
                 });
             }
@@ -89,7 +89,7 @@ var GitHub = {
     getJsonData: function (url, async, callback) {
         var me = this;
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", url, async);
+        xhr.open('GET', url, async);
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4) {
                 var data = JSON.parse(xhr.responseText);

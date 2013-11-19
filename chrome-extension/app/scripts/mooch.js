@@ -14,8 +14,8 @@ var MoochSentinel = {
                 }
             }
         }
-        console.log("Mooch statuses: " + me.statuses);
-        console.log("Mooch status: " + result);
+        console.log('Mooch statuses: ' + me.statuses);
+        console.log('Mooch status: ' + result);
         return result;
     },
 
@@ -23,11 +23,11 @@ var MoochSentinel = {
         console.log('rerendering badge...');
         var color = null;
         if (this.isOk()) {
-            var msg = "Okay";
-            color = "#0F0";
+            var msg = 'Okay';
+            color = '#0F0';
         } else {
-            var msg = "Blocked";
-            color = "#F00";
+            var msg = 'Blocked';
+            color = '#F00';
         }
         chrome.browserAction.setBadgeText({text: msg});
         if (color) {
@@ -38,7 +38,7 @@ var MoochSentinel = {
 
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
-        console.log("message", arguments);
+        console.log('message', arguments);
         if (request.codeForces) {
             MoochSentinel.statuses.codeForces = request.ok;
             MoochSentinel.render();

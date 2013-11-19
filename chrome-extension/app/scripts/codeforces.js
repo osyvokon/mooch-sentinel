@@ -11,7 +11,7 @@ var CodeForces = {
         var user = localStorage['moochLogin'];
         if (user) {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "http://mooch.co.vu:5000/status/" + user, true);
+            xhr.open('GET', 'http://mooch.co.vu:5000/status/' + user, true);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {
                     if (xhr.responseText) {
@@ -30,15 +30,15 @@ var CodeForces = {
     },
 
     parseSubmissionsPage: function (url) {
-        var html = $("<div></div>").load(url);
-        var rows = $("table.status-frame-datatable tr:not(.first-row)", html);
+        var html = $('<div></div>').load(url);
+        var rows = $('table.status-frame-datatable tr:not(.first-row)', html);
         var submissions = rows.map(function (row) {
             var $row = $(row);
-            var verdict = $row.children(".status-verdict-cell").children("span")[0].className;
+            var verdict = $row.children('.status-verdict-cell').children('span')[0].className;
             return {
-                "id": row.data("submissionId"),
-                "date": $row.children("td")[1].innerText,
-                "okay": (verdict == "verdict-accepted")
+                'id': row.data('submissionId'),
+                'date': $row.children('td')[1].innerText,
+                'okay': (verdict == 'verdict-accepted')
             }
         });
 

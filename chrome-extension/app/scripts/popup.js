@@ -12,7 +12,7 @@ var Popup = {
         console.log('rerendering popup...');
         var bg = chrome.extension.getBackgroundPage();
         if (!bg || !bg['MoochSentinel']) {
-            console.log("No background page!");
+            console.log('No background page!');
             return;
         }
         var sentinel = bg['MoochSentinel'];
@@ -20,7 +20,7 @@ var Popup = {
         this.setPopupElementText('status', '' + sentinel.statuses.codeForces);
         this.setPopupElementText('ghStatus', '' + sentinel.statuses.gitHub);
         var data = {
-            "1383926200": 10
+            '1383926200': 10
         };
         this.renderCalendar(data);
     },
@@ -30,21 +30,21 @@ var Popup = {
         var startDate = new Date();
         startDate.setMonth(startDate.getMonth() - 1);
         cal.init({
-            domain: "month",
+            domain: 'month',
             range: 2,
             start: startDate,
             cellSize: 10,
             cellRadius: 2,
-            highlight: "now",
+            highlight: 'now',
             data: data
         });
     },
 
     checkCodeForcesLogin: function () {
         console.log('check CodeForces login...');
-        var el = document.getElementById("status");
+        var el = document.getElementById('status');
         if (!localStorage['moochLogin']) {
-            el.innerText = "Please set CodeForces user login on options page";
+            el.innerText = 'Please set CodeForces user login on options page';
             return false;
         }
         return true;
@@ -52,9 +52,9 @@ var Popup = {
 
     checkGitHubLogin: function () {
         console.log('check GitHub login...');
-        var el = document.getElementById("ghStatus");
+        var el = document.getElementById('ghStatus');
         if (!localStorage['gitHubLogin']) {
-            el.innerText = "Please set GitHub user login on options page";
+            el.innerText = 'Please set GitHub user login on options page';
             return false;
         }
         return true;
@@ -68,6 +68,6 @@ var Popup = {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
     Popup.refresh();
 });
