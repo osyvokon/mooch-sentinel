@@ -88,17 +88,19 @@ var GitHub = {
 
     getJsonData: function (url, async, callback) {
         var me = this;
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', url, async);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4) {
-                var data = JSON.parse(xhr.responseText);
+        $.ajax(url, {
+            async: async
+        })
+            .done(function (data) {
                 if (callback) {
                     callback.call(me, data);
                 }
-            }
-        }
-        xhr.send();
+            })
+            .fail(function () {
+                if (callback) {
+                    callback.call(me, null);
+                }
+            });
     }
 }
 
