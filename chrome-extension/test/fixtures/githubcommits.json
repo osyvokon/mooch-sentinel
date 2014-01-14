@@ -1,0 +1,2112 @@
+[
+    {
+        "sha": "c953765895d4d7f4639e9afc460982027fe77d94",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-19T09:32:09Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-19T09:32:09Z"
+            },
+            "message": "added jquery to github background script",
+            "tree": {
+                "sha": "892de3911abc95098d900622b23f42e00ec1b59c",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/892de3911abc95098d900622b23f42e00ec1b59c"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/c953765895d4d7f4639e9afc460982027fe77d94",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/c953765895d4d7f4639e9afc460982027fe77d94",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/c953765895d4d7f4639e9afc460982027fe77d94",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/c953765895d4d7f4639e9afc460982027fe77d94/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "06d831c835afe462041feb372c048aa83d81fb51",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/06d831c835afe462041feb372c048aa83d81fb51",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/06d831c835afe462041feb372c048aa83d81fb51"
+            }
+        ]
+    },
+    {
+        "sha": "06d831c835afe462041feb372c048aa83d81fb51",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-19T09:06:50Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-19T09:06:50Z"
+            },
+            "message": "changing double to single quotes in js (better style)",
+            "tree": {
+                "sha": "790b9671229173467f5cc30a2e2ca0db47cc8625",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/790b9671229173467f5cc30a2e2ca0db47cc8625"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/06d831c835afe462041feb372c048aa83d81fb51",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/06d831c835afe462041feb372c048aa83d81fb51",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/06d831c835afe462041feb372c048aa83d81fb51",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/06d831c835afe462041feb372c048aa83d81fb51/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "1e1ee1bf4c88d4233b4f59daa16d838fb1f16a7b",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/1e1ee1bf4c88d4233b4f59daa16d838fb1f16a7b",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/1e1ee1bf4c88d4233b4f59daa16d838fb1f16a7b"
+            }
+        ]
+    },
+    {
+        "sha": "1e1ee1bf4c88d4233b4f59daa16d838fb1f16a7b",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-13T17:51:00Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-13T17:51:00Z"
+            },
+            "message": "Failing test for codeforces.ru scraper.",
+            "tree": {
+                "sha": "4e25ce117003bb018283291d7c5025e3e4703cf4",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/4e25ce117003bb018283291d7c5025e3e4703cf4"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/1e1ee1bf4c88d4233b4f59daa16d838fb1f16a7b",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/1e1ee1bf4c88d4233b4f59daa16d838fb1f16a7b",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/1e1ee1bf4c88d4233b4f59daa16d838fb1f16a7b",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/1e1ee1bf4c88d4233b4f59daa16d838fb1f16a7b/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "e718fc0ffffaf969b4ec26e5c3a5d027c78c2309",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e718fc0ffffaf969b4ec26e5c3a5d027c78c2309",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/e718fc0ffffaf969b4ec26e5c3a5d027c78c2309"
+            }
+        ]
+    },
+    {
+        "sha": "e718fc0ffffaf969b4ec26e5c3a5d027c78c2309",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-13T16:45:54Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-13T16:45:54Z"
+            },
+            "message": "Add dependency on JQuery",
+            "tree": {
+                "sha": "c3be7a46114e50c1b10975383589fc7fcc1aa43c",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/c3be7a46114e50c1b10975383589fc7fcc1aa43c"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/e718fc0ffffaf969b4ec26e5c3a5d027c78c2309",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e718fc0ffffaf969b4ec26e5c3a5d027c78c2309",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/e718fc0ffffaf969b4ec26e5c3a5d027c78c2309",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e718fc0ffffaf969b4ec26e5c3a5d027c78c2309/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "82e3758fce47c8bc21b624cfabba37807a51618a",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/82e3758fce47c8bc21b624cfabba37807a51618a",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/82e3758fce47c8bc21b624cfabba37807a51618a"
+            }
+        ]
+    },
+    {
+        "sha": "82e3758fce47c8bc21b624cfabba37807a51618a",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-13T16:34:10Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-13T16:34:10Z"
+            },
+            "message": "Fixed Gruntfile to make `app` scripts available to tests.\n\nThis issue described here:\nhttps://github.com/yeoman/generator-webapp/issues/101",
+            "tree": {
+                "sha": "c062393351593831f3fa2e814f55c9ace3f82420",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/c062393351593831f3fa2e814f55c9ace3f82420"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/82e3758fce47c8bc21b624cfabba37807a51618a",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/82e3758fce47c8bc21b624cfabba37807a51618a",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/82e3758fce47c8bc21b624cfabba37807a51618a",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/82e3758fce47c8bc21b624cfabba37807a51618a/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "3fc5fc5b328b1c0849d66dbda06d285447d0e3c7",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/3fc5fc5b328b1c0849d66dbda06d285447d0e3c7",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/3fc5fc5b328b1c0849d66dbda06d285447d0e3c7"
+            }
+        ]
+    },
+    {
+        "sha": "3fc5fc5b328b1c0849d66dbda06d285447d0e3c7",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-13T08:34:17Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-13T08:34:17Z"
+            },
+            "message": "added idea files to gitignore",
+            "tree": {
+                "sha": "aa5bc0b4259e83462dda0bc94eddcd758b14d9f8",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/aa5bc0b4259e83462dda0bc94eddcd758b14d9f8"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/3fc5fc5b328b1c0849d66dbda06d285447d0e3c7",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/3fc5fc5b328b1c0849d66dbda06d285447d0e3c7",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/3fc5fc5b328b1c0849d66dbda06d285447d0e3c7",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/3fc5fc5b328b1c0849d66dbda06d285447d0e3c7/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "53080f700e6b5407f6866daba62b8b9726a79f73",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/53080f700e6b5407f6866daba62b8b9726a79f73",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/53080f700e6b5407f6866daba62b8b9726a79f73"
+            }
+        ]
+    },
+    {
+        "sha": "53080f700e6b5407f6866daba62b8b9726a79f73",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-13T08:30:00Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-13T08:30:00Z"
+            },
+            "message": "Added communication from popup with background page",
+            "tree": {
+                "sha": "0cd4353c6e30afa77afb26eb9a879396ea62c3de",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/0cd4353c6e30afa77afb26eb9a879396ea62c3de"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/53080f700e6b5407f6866daba62b8b9726a79f73",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/53080f700e6b5407f6866daba62b8b9726a79f73",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/53080f700e6b5407f6866daba62b8b9726a79f73",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/53080f700e6b5407f6866daba62b8b9726a79f73/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "4ef9d5bb38893f6d25910de3326b1884253d4168",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/4ef9d5bb38893f6d25910de3326b1884253d4168",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/4ef9d5bb38893f6d25910de3326b1884253d4168"
+            }
+        ]
+    },
+    {
+        "sha": "4ef9d5bb38893f6d25910de3326b1884253d4168",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-08T15:26:49Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-08T15:57:20Z"
+            },
+            "message": "Add dummy calendar heat map",
+            "tree": {
+                "sha": "291f8486551f3223925d9825ed9239243205433f",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/291f8486551f3223925d9825ed9239243205433f"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/4ef9d5bb38893f6d25910de3326b1884253d4168",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/4ef9d5bb38893f6d25910de3326b1884253d4168",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/4ef9d5bb38893f6d25910de3326b1884253d4168",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/4ef9d5bb38893f6d25910de3326b1884253d4168/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "0c29fdc9f155828d6c50c8eb5d4158898a991fa1",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/0c29fdc9f155828d6c50c8eb5d4158898a991fa1",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/0c29fdc9f155828d6c50c8eb5d4158898a991fa1"
+            }
+        ]
+    },
+    {
+        "sha": "0c29fdc9f155828d6c50c8eb5d4158898a991fa1",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-08T11:21:41Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-08T11:21:41Z"
+            },
+            "message": "moved status refresh into periodical action",
+            "tree": {
+                "sha": "76a1c611ab36564cc118c63a80cc955b226166d2",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/76a1c611ab36564cc118c63a80cc955b226166d2"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/0c29fdc9f155828d6c50c8eb5d4158898a991fa1",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/0c29fdc9f155828d6c50c8eb5d4158898a991fa1",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/0c29fdc9f155828d6c50c8eb5d4158898a991fa1",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/0c29fdc9f155828d6c50c8eb5d4158898a991fa1/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "44b3c166c5e4508f960bc5032faf3adbbb9ba40e",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/44b3c166c5e4508f960bc5032faf3adbbb9ba40e",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/44b3c166c5e4508f960bc5032faf3adbbb9ba40e"
+            }
+        ]
+    },
+    {
+        "sha": "44b3c166c5e4508f960bc5032faf3adbbb9ba40e",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-08T10:57:12Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-08T10:57:12Z"
+            },
+            "message": "moved status refresh into periodical action",
+            "tree": {
+                "sha": "7afeb06ab28c9febc50886d7654608fc2d15f878",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/7afeb06ab28c9febc50886d7654608fc2d15f878"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/44b3c166c5e4508f960bc5032faf3adbbb9ba40e",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/44b3c166c5e4508f960bc5032faf3adbbb9ba40e",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/44b3c166c5e4508f960bc5032faf3adbbb9ba40e",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/44b3c166c5e4508f960bc5032faf3adbbb9ba40e/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "b70ecd10ebcc8f08aa81b3ee3b17803741c1df6e",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b70ecd10ebcc8f08aa81b3ee3b17803741c1df6e",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/b70ecd10ebcc8f08aa81b3ee3b17803741c1df6e"
+            }
+        ]
+    },
+    {
+        "sha": "b70ecd10ebcc8f08aa81b3ee3b17803741c1df6e",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T17:22:18Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T17:22:18Z"
+            },
+            "message": "moved status refresh into periodical action",
+            "tree": {
+                "sha": "a52748bb12fa244f35f203f127e12df27ebc59df",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/a52748bb12fa244f35f203f127e12df27ebc59df"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/b70ecd10ebcc8f08aa81b3ee3b17803741c1df6e",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b70ecd10ebcc8f08aa81b3ee3b17803741c1df6e",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/b70ecd10ebcc8f08aa81b3ee3b17803741c1df6e",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b70ecd10ebcc8f08aa81b3ee3b17803741c1df6e/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "df4b149b2e4697d5a18472a8e505d51af3cff68e",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/df4b149b2e4697d5a18472a8e505d51af3cff68e",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/df4b149b2e4697d5a18472a8e505d51af3cff68e"
+            }
+        ]
+    },
+    {
+        "sha": "df4b149b2e4697d5a18472a8e505d51af3cff68e",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T10:47:05Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T10:47:05Z"
+            },
+            "message": "moved status refresh into periodical action",
+            "tree": {
+                "sha": "d5e92d50ab0272847badef1c7ac062b91c292397",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/d5e92d50ab0272847badef1c7ac062b91c292397"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/df4b149b2e4697d5a18472a8e505d51af3cff68e",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/df4b149b2e4697d5a18472a8e505d51af3cff68e",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/df4b149b2e4697d5a18472a8e505d51af3cff68e",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/df4b149b2e4697d5a18472a8e505d51af3cff68e/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "92af72baa69471904e3dbffd70be2d06b7e1d7d3",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/92af72baa69471904e3dbffd70be2d06b7e1d7d3",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/92af72baa69471904e3dbffd70be2d06b7e1d7d3"
+            }
+        ]
+    },
+    {
+        "sha": "92af72baa69471904e3dbffd70be2d06b7e1d7d3",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T10:45:41Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T10:45:41Z"
+            },
+            "message": "moved status refresh into periodical action",
+            "tree": {
+                "sha": "9888e700da06923b1d229ff71c185eb0a15475c7",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/9888e700da06923b1d229ff71c185eb0a15475c7"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/92af72baa69471904e3dbffd70be2d06b7e1d7d3",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/92af72baa69471904e3dbffd70be2d06b7e1d7d3",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/92af72baa69471904e3dbffd70be2d06b7e1d7d3",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/92af72baa69471904e3dbffd70be2d06b7e1d7d3/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "b73e841b3e04880c9166f5068e1530ba5316503a",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b73e841b3e04880c9166f5068e1530ba5316503a",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/b73e841b3e04880c9166f5068e1530ba5316503a"
+            }
+        ]
+    },
+    {
+        "sha": "b73e841b3e04880c9166f5068e1530ba5316503a",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T10:23:03Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T10:23:03Z"
+            },
+            "message": "trying to move refresh into periodical",
+            "tree": {
+                "sha": "293ba9952a7c145946a240271f7be4a8c8e425d1",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/293ba9952a7c145946a240271f7be4a8c8e425d1"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/b73e841b3e04880c9166f5068e1530ba5316503a",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b73e841b3e04880c9166f5068e1530ba5316503a",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/b73e841b3e04880c9166f5068e1530ba5316503a",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b73e841b3e04880c9166f5068e1530ba5316503a/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "44fda2df603d54574351e2448546fd50db1f8843",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/44fda2df603d54574351e2448546fd50db1f8843",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/44fda2df603d54574351e2448546fd50db1f8843"
+            }
+        ]
+    },
+    {
+        "sha": "44fda2df603d54574351e2448546fd50db1f8843",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T08:52:46Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-07T08:52:46Z"
+            },
+            "message": "Merge branch 'master' of https://github.com/asivokon/mooch-sentinel",
+            "tree": {
+                "sha": "06dd71d0f512552db186561db953682026282547",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/06dd71d0f512552db186561db953682026282547"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/44fda2df603d54574351e2448546fd50db1f8843",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/44fda2df603d54574351e2448546fd50db1f8843",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/44fda2df603d54574351e2448546fd50db1f8843",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/44fda2df603d54574351e2448546fd50db1f8843/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "f394517353b1c6ef22499e65d0f479abcc6be242",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/f394517353b1c6ef22499e65d0f479abcc6be242",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/f394517353b1c6ef22499e65d0f479abcc6be242"
+            },
+            {
+                "sha": "2301343abd9b96f691246b6d37ab7451f661bd3d",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2301343abd9b96f691246b6d37ab7451f661bd3d",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/2301343abd9b96f691246b6d37ab7451f661bd3d"
+            }
+        ]
+    },
+    {
+        "sha": "2301343abd9b96f691246b6d37ab7451f661bd3d",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-07T07:43:11Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-11-07T08:48:25Z"
+            },
+            "message": "Moved Chrome extension to a yeoman template.",
+            "tree": {
+                "sha": "a2f5cf5f9e7aa519b5a57c8f1d35dbf12825052c",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/a2f5cf5f9e7aa519b5a57c8f1d35dbf12825052c"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/2301343abd9b96f691246b6d37ab7451f661bd3d",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2301343abd9b96f691246b6d37ab7451f661bd3d",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/2301343abd9b96f691246b6d37ab7451f661bd3d",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2301343abd9b96f691246b6d37ab7451f661bd3d/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "11a8674c2143d2291fb9fd96f2fd201fea2487d5",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/11a8674c2143d2291fb9fd96f2fd201fea2487d5",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/11a8674c2143d2291fb9fd96f2fd201fea2487d5"
+            }
+        ]
+    },
+    {
+        "sha": "f394517353b1c6ef22499e65d0f479abcc6be242",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-06T09:41:20Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-11-06T09:41:20Z"
+            },
+            "message": "small changes - tried to set up periodic update  but didn't finish",
+            "tree": {
+                "sha": "253ff7f8fd5c58d1c994be49f4865edaddd6133d",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/253ff7f8fd5c58d1c994be49f4865edaddd6133d"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/f394517353b1c6ef22499e65d0f479abcc6be242",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/f394517353b1c6ef22499e65d0f479abcc6be242",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/f394517353b1c6ef22499e65d0f479abcc6be242",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/f394517353b1c6ef22499e65d0f479abcc6be242/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "11a8674c2143d2291fb9fd96f2fd201fea2487d5",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/11a8674c2143d2291fb9fd96f2fd201fea2487d5",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/11a8674c2143d2291fb9fd96f2fd201fea2487d5"
+            }
+        ]
+    },
+    {
+        "sha": "11a8674c2143d2291fb9fd96f2fd201fea2487d5",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-10-31T09:26:39Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-10-31T09:26:39Z"
+            },
+            "message": "added github commits check",
+            "tree": {
+                "sha": "c18cf96b3d47abb08a5e56965b77a1ee53dc7ce3",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/c18cf96b3d47abb08a5e56965b77a1ee53dc7ce3"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/11a8674c2143d2291fb9fd96f2fd201fea2487d5",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/11a8674c2143d2291fb9fd96f2fd201fea2487d5",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/11a8674c2143d2291fb9fd96f2fd201fea2487d5",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/11a8674c2143d2291fb9fd96f2fd201fea2487d5/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "b88ffaf33c3e4b466c358955c22b23f4c30e104b",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b88ffaf33c3e4b466c358955c22b23f4c30e104b",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/b88ffaf33c3e4b466c358955c22b23f4c30e104b"
+            }
+        ]
+    },
+    {
+        "sha": "b88ffaf33c3e4b466c358955c22b23f4c30e104b",
+        "commit": {
+            "author": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-10-29T09:21:12Z"
+            },
+            "committer": {
+                "name": "mchernyavskaya",
+                "email": "m.chernyavska@gmail.com",
+                "date": "2013-10-29T09:21:12Z"
+            },
+            "message": "added github.js",
+            "tree": {
+                "sha": "857ff63645397f4a3a5ca1bbe28836f96ab98922",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/857ff63645397f4a3a5ca1bbe28836f96ab98922"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/b88ffaf33c3e4b466c358955c22b23f4c30e104b",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b88ffaf33c3e4b466c358955c22b23f4c30e104b",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/b88ffaf33c3e4b466c358955c22b23f4c30e104b",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b88ffaf33c3e4b466c358955c22b23f4c30e104b/comments",
+        "author": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "mchernyavskaya",
+            "id": 538843,
+            "avatar_url": "https://1.gravatar.com/avatar/bac1e2c06f6feba833cefbfa6b686708?d=https%3A%2F%2Fidenticons.github.com%2F39c8af2b3c52fbf88c9e5a04723c0430.png&r=x",
+            "gravatar_id": "bac1e2c06f6feba833cefbfa6b686708",
+            "url": "https://api.github.com/users/mchernyavskaya",
+            "html_url": "https://github.com/mchernyavskaya",
+            "followers_url": "https://api.github.com/users/mchernyavskaya/followers",
+            "following_url": "https://api.github.com/users/mchernyavskaya/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mchernyavskaya/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mchernyavskaya/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mchernyavskaya/subscriptions",
+            "organizations_url": "https://api.github.com/users/mchernyavskaya/orgs",
+            "repos_url": "https://api.github.com/users/mchernyavskaya/repos",
+            "events_url": "https://api.github.com/users/mchernyavskaya/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mchernyavskaya/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "3b3f17aa649e54530965357ef7806929029ff975",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/3b3f17aa649e54530965357ef7806929029ff975",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/3b3f17aa649e54530965357ef7806929029ff975"
+            }
+        ]
+    },
+    {
+        "sha": "3b3f17aa649e54530965357ef7806929029ff975",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-28T08:30:52Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-28T08:31:25Z"
+            },
+            "message": "Merge `chrome` branch",
+            "tree": {
+                "sha": "f2a06ef158d12029e58fcce9193afa550e45438a",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/f2a06ef158d12029e58fcce9193afa550e45438a"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/3b3f17aa649e54530965357ef7806929029ff975",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/3b3f17aa649e54530965357ef7806929029ff975",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/3b3f17aa649e54530965357ef7806929029ff975",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/3b3f17aa649e54530965357ef7806929029ff975/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "59eac626fd736bb20f82f659077a41e2ebeffb62",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/59eac626fd736bb20f82f659077a41e2ebeffb62",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/59eac626fd736bb20f82f659077a41e2ebeffb62"
+            },
+            {
+                "sha": "e7364f42d49f0e5cccef7da49d109418fe8b5c89",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e7364f42d49f0e5cccef7da49d109418fe8b5c89",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/e7364f42d49f0e5cccef7da49d109418fe8b5c89"
+            }
+        ]
+    },
+    {
+        "sha": "e7364f42d49f0e5cccef7da49d109418fe8b5c89",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-28T08:23:59Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-28T08:23:59Z"
+            },
+            "message": "Print status at the extension's badge",
+            "tree": {
+                "sha": "273fdaadec7835ea35711e28c9079e8b11fd6677",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/273fdaadec7835ea35711e28c9079e8b11fd6677"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/e7364f42d49f0e5cccef7da49d109418fe8b5c89",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e7364f42d49f0e5cccef7da49d109418fe8b5c89",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/e7364f42d49f0e5cccef7da49d109418fe8b5c89",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e7364f42d49f0e5cccef7da49d109418fe8b5c89/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2b37a759b15ad2ca0ac83c4cda28bb45ac27732a",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2b37a759b15ad2ca0ac83c4cda28bb45ac27732a",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/2b37a759b15ad2ca0ac83c4cda28bb45ac27732a"
+            }
+        ]
+    },
+    {
+        "sha": "2b37a759b15ad2ca0ac83c4cda28bb45ac27732a",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T14:45:11Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T15:28:02Z"
+            },
+            "message": "Add extension's options page, ability to set login.",
+            "tree": {
+                "sha": "d3a6f16090289a9d325b78b8ed88071abb501d29",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/d3a6f16090289a9d325b78b8ed88071abb501d29"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/2b37a759b15ad2ca0ac83c4cda28bb45ac27732a",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2b37a759b15ad2ca0ac83c4cda28bb45ac27732a",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/2b37a759b15ad2ca0ac83c4cda28bb45ac27732a",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2b37a759b15ad2ca0ac83c4cda28bb45ac27732a/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "7a0734ad5c6450b77e070f9b28f3448d095d48dc",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/7a0734ad5c6450b77e070f9b28f3448d095d48dc",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/7a0734ad5c6450b77e070f9b28f3448d095d48dc"
+            }
+        ]
+    },
+    {
+        "sha": "7a0734ad5c6450b77e070f9b28f3448d095d48dc",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T08:03:46Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T10:46:01Z"
+            },
+            "message": "Chrome extension that shows current status.",
+            "tree": {
+                "sha": "2bf8330f9b8e9d1e9a82c34b5d4b7f58eaf35ce7",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/2bf8330f9b8e9d1e9a82c34b5d4b7f58eaf35ce7"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/7a0734ad5c6450b77e070f9b28f3448d095d48dc",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/7a0734ad5c6450b77e070f9b28f3448d095d48dc",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/7a0734ad5c6450b77e070f9b28f3448d095d48dc",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/7a0734ad5c6450b77e070f9b28f3448d095d48dc/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "464b859aa48530190639077fe528d7d2be2961ce",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/464b859aa48530190639077fe528d7d2be2961ce",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/464b859aa48530190639077fe528d7d2be2961ce"
+            }
+        ]
+    },
+    {
+        "sha": "59eac626fd736bb20f82f659077a41e2ebeffb62",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:12:42Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:12:42Z"
+            },
+            "message": "Add shebang string",
+            "tree": {
+                "sha": "ab9e683b828506e051176ab1972e7512ebcea908",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/ab9e683b828506e051176ab1972e7512ebcea908"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/59eac626fd736bb20f82f659077a41e2ebeffb62",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/59eac626fd736bb20f82f659077a41e2ebeffb62",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/59eac626fd736bb20f82f659077a41e2ebeffb62",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/59eac626fd736bb20f82f659077a41e2ebeffb62/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "7585183e7bc4117f403024c6a022a54edc3f1906",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/7585183e7bc4117f403024c6a022a54edc3f1906",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/7585183e7bc4117f403024c6a022a54edc3f1906"
+            }
+        ]
+    },
+    {
+        "sha": "7585183e7bc4117f403024c6a022a54edc3f1906",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:12:02Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:12:02Z"
+            },
+            "message": "No longer need sqlite",
+            "tree": {
+                "sha": "8908960ab93155445ad2bf7c1e30a1a83f137ef5",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/8908960ab93155445ad2bf7c1e30a1a83f137ef5"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/7585183e7bc4117f403024c6a022a54edc3f1906",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/7585183e7bc4117f403024c6a022a54edc3f1906",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/7585183e7bc4117f403024c6a022a54edc3f1906",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/7585183e7bc4117f403024c6a022a54edc3f1906/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "e2de8cab219111d328e7e3b1a443cda2b0c227a3",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e2de8cab219111d328e7e3b1a443cda2b0c227a3",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/e2de8cab219111d328e7e3b1a443cda2b0c227a3"
+            }
+        ]
+    },
+    {
+        "sha": "e2de8cab219111d328e7e3b1a443cda2b0c227a3",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:10:15Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:10:15Z"
+            },
+            "message": "Add `Goal.to_dict` method (`from_dict` counterpart)",
+            "tree": {
+                "sha": "1a2bf8a9b82deb89bd94314f4faacf224c83237c",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/1a2bf8a9b82deb89bd94314f4faacf224c83237c"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/e2de8cab219111d328e7e3b1a443cda2b0c227a3",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e2de8cab219111d328e7e3b1a443cda2b0c227a3",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/e2de8cab219111d328e7e3b1a443cda2b0c227a3",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/e2de8cab219111d328e7e3b1a443cda2b0c227a3/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "b7802d6b1f78990aa57856c899d8f571252c47a0",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b7802d6b1f78990aa57856c899d8f571252c47a0",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/b7802d6b1f78990aa57856c899d8f571252c47a0"
+            }
+        ]
+    },
+    {
+        "sha": "b7802d6b1f78990aa57856c899d8f571252c47a0",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:04:38Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:04:38Z"
+            },
+            "message": "GET /status/{user} returns actual results",
+            "tree": {
+                "sha": "7df1babd9690a9096bc0ac277b0efee471d48c42",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/7df1babd9690a9096bc0ac277b0efee471d48c42"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/b7802d6b1f78990aa57856c899d8f571252c47a0",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b7802d6b1f78990aa57856c899d8f571252c47a0",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/b7802d6b1f78990aa57856c899d8f571252c47a0",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/b7802d6b1f78990aa57856c899d8f571252c47a0/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "68aa03bbad915951a8caa1c2e83027e8aa7def98",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/68aa03bbad915951a8caa1c2e83027e8aa7def98",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/68aa03bbad915951a8caa1c2e83027e8aa7def98"
+            }
+        ]
+    },
+    {
+        "sha": "68aa03bbad915951a8caa1c2e83027e8aa7def98",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T08:59:28Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T09:01:32Z"
+            },
+            "message": "Removed Github hooks.\n\nWhile push model has its advantages, it does require editing GitHub\nconfiguration. This is inconvient, so we are going to switch to pull\nmodel on top of GitHub API.",
+            "tree": {
+                "sha": "7486a9e14b16881925373f3747734c3898d7d023",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/7486a9e14b16881925373f3747734c3898d7d023"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/68aa03bbad915951a8caa1c2e83027e8aa7def98",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/68aa03bbad915951a8caa1c2e83027e8aa7def98",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/68aa03bbad915951a8caa1c2e83027e8aa7def98",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/68aa03bbad915951a8caa1c2e83027e8aa7def98/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "4491715449153b147b49b5a8e5b86e7194c60e1f",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/4491715449153b147b49b5a8e5b86e7194c60e1f",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/4491715449153b147b49b5a8e5b86e7194c60e1f"
+            }
+        ]
+    },
+    {
+        "sha": "4491715449153b147b49b5a8e5b86e7194c60e1f",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T08:58:15Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T08:58:15Z"
+            },
+            "message": "Method to check current status of goals",
+            "tree": {
+                "sha": "7a580362bc334cbb59d9615970c799b39a8c813b",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/7a580362bc334cbb59d9615970c799b39a8c813b"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/4491715449153b147b49b5a8e5b86e7194c60e1f",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/4491715449153b147b49b5a8e5b86e7194c60e1f",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/4491715449153b147b49b5a8e5b86e7194c60e1f",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/4491715449153b147b49b5a8e5b86e7194c60e1f/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "2d0bfbb8407a1a8ee4a625580aeb2ca21fb7ea16",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2d0bfbb8407a1a8ee4a625580aeb2ca21fb7ea16",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/2d0bfbb8407a1a8ee4a625580aeb2ca21fb7ea16"
+            }
+        ]
+    },
+    {
+        "sha": "2d0bfbb8407a1a8ee4a625580aeb2ca21fb7ea16",
+        "commit": {
+            "author": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T08:57:28Z"
+            },
+            "committer": {
+                "name": "Aleksey Sivokon",
+                "email": "aleksey.sivokon@gmail.com",
+                "date": "2013-10-25T08:57:47Z"
+            },
+            "message": "Factored user_goals to a separate method",
+            "tree": {
+                "sha": "4dfc559699cb290c70b9ef8470085157152a1a47",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/trees/4dfc559699cb290c70b9ef8470085157152a1a47"
+            },
+            "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/git/commits/2d0bfbb8407a1a8ee4a625580aeb2ca21fb7ea16",
+            "comment_count": 0
+        },
+        "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2d0bfbb8407a1a8ee4a625580aeb2ca21fb7ea16",
+        "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/2d0bfbb8407a1a8ee4a625580aeb2ca21fb7ea16",
+        "comments_url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/2d0bfbb8407a1a8ee4a625580aeb2ca21fb7ea16/comments",
+        "author": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "committer": {
+            "login": "asivokon",
+            "id": 2910707,
+            "avatar_url": "https://2.gravatar.com/avatar/461e070e68d5ac9dc9101a1784c97cf4?d=https%3A%2F%2Fidenticons.github.com%2Ff84e4a360b7717b747fa3f14d3379353.png&r=x",
+            "gravatar_id": "461e070e68d5ac9dc9101a1784c97cf4",
+            "url": "https://api.github.com/users/asivokon",
+            "html_url": "https://github.com/asivokon",
+            "followers_url": "https://api.github.com/users/asivokon/followers",
+            "following_url": "https://api.github.com/users/asivokon/following{/other_user}",
+            "gists_url": "https://api.github.com/users/asivokon/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/asivokon/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/asivokon/subscriptions",
+            "organizations_url": "https://api.github.com/users/asivokon/orgs",
+            "repos_url": "https://api.github.com/users/asivokon/repos",
+            "events_url": "https://api.github.com/users/asivokon/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/asivokon/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "parents": [
+            {
+                "sha": "d8a806776afdc4bce3da3732f3dafd08fc7441ce",
+                "url": "https://api.github.com/repos/mchernyavskaya/mooch-sentinel/commits/d8a806776afdc4bce3da3732f3dafd08fc7441ce",
+                "html_url": "https://github.com/mchernyavskaya/mooch-sentinel/commit/d8a806776afdc4bce3da3732f3dafd08fc7441ce"
+            }
+        ]
+    }
+]
