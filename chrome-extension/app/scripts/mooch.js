@@ -19,7 +19,7 @@ var MoochSentinel = {
         return result;
     },
 
-    render: function() {
+    render: function () {
         console.log('rerendering badge...');
         var color = null;
         if (this.isOk()) {
@@ -48,3 +48,13 @@ chrome.runtime.onMessage.addListener(
             MoochSentinel.render();
         }
     });
+
+chrome.webRequest.onBeforeRequest.addListener(
+    function (details) {
+        if (!MoochSentinel.isOk()) {
+            console.log("interrupting request to ", details.url);
+            return {cancel: true};
+        }
+    },
+    {urls: ["*://www.example.com/*"]},
+    ["blocking"]);

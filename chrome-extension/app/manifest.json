@@ -5,7 +5,10 @@
     "description": "__MSG_appDescription__",
     "permissions": [
         "http://mooch.co.vu:5000/",
-        "alarms"
+        "http://*/",
+        "alarms",
+        "webRequest",
+        "webRequestBlocking"
     ],
     "icons": {
         "16": "images/icon-16.png",
