@@ -29,19 +29,21 @@ var CodeForces = {
         }
     },
 
-    parseSubmissionsPage: function (url) {
-        var html = $('<div></div>').load(url);
-        var rows = $('table.status-frame-datatable tr:not(.first-row)', html);
-        var submissions = rows.map(function (row) {
-            var $row = $(row);
-            var verdict = $row.children('.status-verdict-cell').children('span')[0].className;
-            return {
-                'id': row.data('submissionId'),
-                'date': $row.children('td')[1].innerText,
-                'okay': (verdict == 'verdict-accepted')
-            }
-        });
+    parseSubmissionsPage: function (url, callback) {
+        var html = $('<div></div>');
+        html.load(url, function () {
+            var rows = $('table.status-frame-datatable tr:not(.first-row)', html);
+            var submissions = $.map(rows, function (row) {
+                var $row = $(row);
+                var verdict = $row.children('.status-verdict-cell').children('span')[0].className;
+                return {
+                    'id': $row.data('submissionId'),
+                    'date': $row.children('td')[1].innerText,
+                    'okay': (verdict == 'verdict-accepted')
+                }
+            });
 
-        return submissions.toArray();
+            callback(submissions);
+        });
     }
 }
