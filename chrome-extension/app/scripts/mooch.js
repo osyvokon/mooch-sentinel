@@ -52,8 +52,10 @@ chrome.runtime.onMessage.addListener(
 chrome.webRequest.onBeforeRequest.addListener(
     function (details) {
         if (!MoochSentinel.isOk()) {
+            var redirect = chrome.extension.getURL('blocked.html');
             console.log("interrupting request to ", details.url);
-            return {cancel: true};
+            console.log("redirect: " + redirect);
+            return redirect ? { redirectUrl: redirect } : {cancel: true};
         }
     },
     {urls: ["*://www.example.com/*"]},
