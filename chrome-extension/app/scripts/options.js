@@ -1,23 +1,34 @@
 'use strict';
 
-function save_options() {
-    var login = document.getElementById('login').value;
+function saveOptions() {
+    var login = $('#login')[0].value;
     localStorage['moochLogin'] = login;
-    var gitHubLogin = document.getElementById('ghLogin').value;
+    var gitHubLogin = $('#ghLogin')[0].value;
     localStorage['gitHubLogin'] = gitHubLogin;
 }
 
-function restore_options() {
+function restoreOptions() {
     var login = localStorage['moochLogin'];
     if (login) {
-        document.getElementById('login').value = login;
+        $('#login')[0].value = login;
     }
     var gitHubLogin = localStorage['gitHubLogin'];
     if (gitHubLogin) {
-        document.getElementById('ghLogin').value = gitHubLogin;
+        $('#ghLogin')[0].value = gitHubLogin;
     }
-
-    document.querySelector('#save').addEventListener('click', save_options);
+    $('#save').on('click', saveOptions);
+    $('#addUrlButton').on('click', addUrl);
+    $('.removeUrlButton').on('click', removeUrl);
 }
 
-document.addEventListener('DOMContentLoaded', restore_options);
+function addUrl() {
+    var tr = $(this).parents('tr')[0];
+    $(tr).before('<tr><td><input type="text" maxlength="1024" value=""/></td></tr>');
+    $(tr).prev().find('td').append($('<button class="removeUrlButton">Remove</button>').on('click', removeUrl));
+}
+
+function removeUrl() {
+    $(this).parents('tr').remove();
+}
+
+document.addEventListener('DOMContentLoaded', restoreOptions);

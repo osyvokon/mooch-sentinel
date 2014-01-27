@@ -4,6 +4,7 @@
         <link href="styles/main.css" rel="stylesheet">
         <!-- build:js scripts/options.js -->
         <script src="scripts/options.js"></script>
+        <script src="scripts/jquery-2.0.3.js"></script>
         <!-- endbuild -->
     </head>
     <body>
@@ -13,6 +14,32 @@
         <label>GitHub login</label>
         <input type="text" id="ghLogin">
 
-        <button id="save">Save</button>
+        <table id="blockedUrlTable">
+            <tr>
+                <th>URLs to block</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" maxlength="1024" value="facebook.com"/>
+                        <button class="removeUrlButton">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" maxlength="1024" value="twitter.com"/>
+                        <button class="removeUrlButton">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="addUrlButton">Add URL</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="save">Save Options</button>
     </body>
 </html>
