@@ -58,5 +58,5 @@ chrome.webRequest.onBeforeRequest.addListener(
             return redirect ? { redirectUrl: redirect } : {cancel: true};
         }
     },
-    {urls: ["*://www.example.com/*"]},
+    {urls: localStorage['blockedUrls'] ? localStorage['blockedUrls'].split(',') : []},
     ["blocking"]);
