@@ -33,6 +33,21 @@ function saveOptions() {
     localStorage['blockedUrls'] = urls;
 }
 
+function stripUrls(urls) {
+    var result = [];
+    var stripUrl = function (url) {
+        return url.replace(/^\*:\/\//ig, "").replace(/\/\*$/ig, "").replace(/^www\./ig, "");
+    }
+    $.each(urls, function (idx, url) {
+        var stripped = stripUrl(url);
+        if (result.indexOf(stripped) < 0) {
+            result.push(stripped);
+        }
+
+    });
+    return result;
+}
+
 function restoreOptions() {
     var login = localStorage['moochLogin'];
     if (login) {
@@ -42,14 +57,26 @@ function restoreOptions() {
     if (gitHubLogin) {
         $('#ghLogin')[0].value = gitHubLogin;
     }
+    var blockedUrls = localStorage['blockedUrls'] ? localStorage['blockedUrls'].split(',') : [];
+    if (blockedUrls.length == 0) {
+        blockedUrls.push("facebook.com", "twitter.com");
+    }
+    blockedUrls = stripUrls(blockedUrls);
+    $.each(blockedUrls, function (idx, url) {
+        addUrlInput(url);
+    });
     $('#save').on('click', saveOptions);
-    $('#addUrlButton').on('click', addUrl);
+    $('#addUrlButton').on('click', addUrlInput);
     $('.removeUrlButton').on('click', removeUrl);
 }
 
-function addUrl() {
-    var tr = $(this).parents('tr')[0];
-    $(tr).before('<tr><td><input type="text" maxlength="1024" value=""/></td></tr>');
+function addUrlInput(content) {
+    if (content == null || (typeof content) != 'string') {
+        content = '';
+    }
+    // looking for the last row: with "Add URL" button
+    var tr = $('#blockedUrlTable').find('.addUrl');
+    $(tr).before('<tr><td><input type="text" maxlength="1024" value="' + content + '"/></td></tr>');
     $(tr).prev().find('td').append($('<button class="removeUrlButton">Remove</button>').on('click', removeUrl));
 }
 
