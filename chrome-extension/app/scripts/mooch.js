@@ -19,6 +19,10 @@ var MoochSentinel = {
         return result;
     },
 
+    blockedUrls: function() {
+        return localStorage['blockedUrls'] ? localStorage['blockedUrls'].split(',') : [];
+    },
+
     render: function () {
         console.log('rerendering badge...');
         var color = null;
@@ -58,5 +62,8 @@ chrome.webRequest.onBeforeRequest.addListener(
             return redirect ? { redirectUrl: redirect } : {cancel: true};
         }
     },
-    {urls: localStorage['blockedUrls'] ? localStorage['blockedUrls'].split(',') : []},
+    {
+        urls: MoochSentinel.blockedUrls() || ["<disabled>"],
+        types: ["main_frame"]
+    },
     ["blocking"]);
