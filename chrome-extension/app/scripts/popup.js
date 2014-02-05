@@ -26,18 +26,22 @@ var Popup = {
     },
 
     renderCalendar: function (data) {
-        var cal = new CalHeatMap();
-        var startDate = new Date();
-        startDate.setMonth(startDate.getMonth() - 1);
-        cal.init({
-            domain: 'month',
-            range: 2,
-            start: startDate,
-            cellSize: 10,
-            cellRadius: 2,
-            highlight: 'now',
-            data: data
-        });
+        if (!this.cal) {
+          var startDate = new Date();
+          startDate.setMonth(startDate.getMonth() - 1);
+          this.cal = new CalHeatMap();
+          this.cal.init({
+              domain: 'month',
+              range: 2,
+              start: startDate,
+              cellSize: 10,
+              cellRadius: 2,
+              highlight: 'now',
+              data: data
+          });
+        } else {
+          this.cal.update(data);
+        }
     },
 
     checkCodeForcesLogin: function () {
@@ -69,5 +73,11 @@ var Popup = {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("btnRefresh").onclick = function(e) {
+      MoochSentinel.updateStatuses();
+      Popup.refresh();
+    }
+
     Popup.refresh();
 });
+

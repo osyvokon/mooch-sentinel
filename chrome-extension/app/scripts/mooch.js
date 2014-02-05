@@ -4,6 +4,16 @@ var MoochSentinel = {
         codeForces: false
     },
 
+    updateStatuses: function() {
+        console.log("MoochSentinel.updateStatuses()");
+
+        if (GitHub.hasLogin())
+            GitHub.requestStatus();
+
+        if (CodeForces.hasLogin())
+            CodeForces.requestStatus();
+    },
+
     isOk: function () {
         var me = this, result = false;
         for (status in me.statuses) {
@@ -51,6 +61,12 @@ chrome.runtime.onMessage.addListener(
             MoochSentinel.statuses.gitHub = request.ok;
             MoochSentinel.render();
         }
+    });
+
+chrome.runtime.onMessageExternal.addListener(
+    function(request, sender, sendResponse) {
+      if (sender.update)
+        MoochSentinel.updateStatuses();
     });
 
 chrome.webRequest.onBeforeRequest.addListener(
