@@ -5,7 +5,7 @@ var MoochSentinel = {
         okDate: null
     },
 
-    updateStatuses: function() {
+    updateStatuses: function () {
         console.log("MoochSentinel.updateStatuses()");
 
         if (GitHub.hasLogin())
@@ -96,9 +96,9 @@ chrome.runtime.onMessage.addListener(
     });
 
 chrome.runtime.onMessageExternal.addListener(
-    function(request, sender, sendResponse) {
-      if (sender.update)
-        MoochSentinel.updateStatuses();
+    function (request, sender, sendResponse) {
+        if (sender.update)
+            MoochSentinel.updateStatuses();
     });
 
 chrome.webRequest.onBeforeRequest.addListener(
@@ -111,7 +111,7 @@ chrome.webRequest.onBeforeRequest.addListener(
         }
     },
     {
-        urls: MoochSentinel.blockedUrls() || ["<disabled>"],
+        urls: MoochSentinel.blockedUrls().length > 0 ? MoochSentinel.blockedUrls() : ["<disabled>"],
         types: ["main_frame"]
     },
     ["blocking"]);
