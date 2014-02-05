@@ -9,28 +9,23 @@ var CodeForces = {
         var me = this;
         me.ok = false;
         var user = localStorage['moochLogin'];
-        if (user) {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://mooch.co.vu:5000/status/' + user, true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4) {
-                    if (xhr.responseText) {
-                        var status = JSON.parse(xhr.responseText);
-                        me.ok = !!status.okay;
-                        chrome.runtime.sendMessage({codeForces: true, ok: me.ok});
-                    }
-                    else {
-                        console.log('Empty CodeForces response!');
-                        chrome.runtime.sendMessage({codeForces: true, ok: me.ok});
-                    }
-                }
-            }
-            xhr.send();
+        if (!user) {
+          console.log("User not set for Codeforces, nothing to do");
+          return;
         }
+
+        var url = "http://codeforces.ru/submissions/" + user;
+        console.log("Going to fetch Codeforces from " + url);
+        me.parseSubmissionsPage(url, function(submissions) {
+          console.log("submissions");
+          console.log(submissions);
+                        //me.ok = !!status.okay;
+                        //chrome.runtime.sendMessage({codeForces: true, ok: me.ok});
+        });
     },
 
     parseSubmissionsPage: function (url, callback) {
-        var html = $('<div></div>');
+        var html = $('<div style="display: none"></div>');
         html.load(url, function () {
             var rows = $('table.status-frame-datatable tr:not(.first-row)', html);
             var submissions = $.map(rows, function (row) {
