@@ -1,7 +1,8 @@
 var MoochSentinel = {
     statuses: {
         gitHub: false,
-        codeForces: false
+        codeForces: false,
+        okDate: null
     },
 
     isOk: function () {
@@ -19,7 +20,7 @@ var MoochSentinel = {
         return result;
     },
 
-    blockedUrls: function() {
+    blockedUrls: function () {
         return localStorage['blockedUrls'] ? localStorage['blockedUrls'].split(',') : [];
     },
 
@@ -37,12 +38,27 @@ var MoochSentinel = {
         if (color) {
             chrome.browserAction.setBadgeBackgroundColor({color: color});
         }
+    },
+
+    isLastDateExpired: function () {
+        var okDate = this.statuses.okDate;
+        var daysBetween = function (date1, date2) {
+            // The number of milliseconds in one day
+            var ONE_DAY = 1000 * 60 * 60 * 24
+            // Calculate the difference in milliseconds
+            var difference_ms = Math.abs(date1.getTime() - date2.getTime());
+            // Convert back to days and return
+            return Math.round(difference_ms / ONE_DAY)
+        };
+        return okDate == null
+            || daysBetween(new Date(), okDate) >= 1;
     }
 }
 
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         console.log('message', arguments);
+        var wasOk = MoochSentinel.isOk();
         if (request.codeForces) {
             MoochSentinel.statuses.codeForces = request.ok;
             MoochSentinel.render();
@@ -50,6 +66,22 @@ chrome.runtime.onMessage.addListener(
         if (request.gitHub) {
             MoochSentinel.statuses.gitHub = request.ok;
             MoochSentinel.render();
+        }
+        var isOk = MoochSentinel.isOk();
+        if (isOk) {
+            var statusChanged = (isOk != wasOk);
+            var date = new Date();
+            if (statusChanged) {
+                console.log("Setting last OK date to " + date);
+                MoochSentinel.statuses.okDate = date;
+            }
+            else {
+                // status is OK and was OK, but the date might be stale
+                if (MoochSentinel.isLastDateExpired()) {
+                    console.log("Setting last OK date to " + date);
+                    MoochSentinel.statuses.okDate = date;
+                }
+            }
         }
     });
 
