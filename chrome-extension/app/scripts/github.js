@@ -76,14 +76,19 @@ var GitHub = {
             if (lastCommitDate >= yesterday) {
                 console.log('GitHub commit date good!');
                 me.ok = true;
-                chrome.runtime.sendMessage({gitHub: true, ok: me.ok});
+                me.sendStatus(lastCommitDate);
                 return;
             }
         }
         // no hands, no cookies
         console.log('no hands, no cookies');
         me.ok = false;
-        chrome.runtime.sendMessage({gitHub: true, ok: me.ok});
+        me.sendStatus(lastCommitDate);
+    },
+
+    sendStatus: function(okDate) {
+        console.log("GitHub set status", okDate);
+        chrome.runtime.sendMessage({requestType: 'status', name: 'gitHub', ok: this.ok, okDate: okDate.getTime()});
     },
 
     getJsonData: function (url, async, callback) {

@@ -10,18 +10,22 @@ var CodeForces = {
         me.ok = false;
         var user = localStorage['moochLogin'];
         if (!user) {
-          console.log("User not set for Codeforces, nothing to do");
-          return;
+            console.log("User not set for CodeForces, nothing to do");
+            return;
         }
 
         var url = "http://codeforces.ru/submissions/" + user;
         console.log("Going to fetch Codeforces from " + url);
-        me.parseSubmissionsPage(url, function(submissions) {
-          console.log("submissions");
-          console.log(submissions);
-                        //me.ok = !!status.okay;
-                        //chrome.runtime.sendMessage({codeForces: true, ok: me.ok});
+        me.parseSubmissionsPage(url, function (submissions) {
+            console.log("CodeForces submissions", submissions);
+            // TODO implement status change
+//            me.ok = !!status.okay;
+//            me.sendStatus(lastOkDate);
         });
+    },
+
+    sendStatus: function (okDate) {
+        chrome.runtime.sendMessage({requestType: 'status', name: 'codeForces', ok: this.ok, okDate: okDate});
     },
 
     parseSubmissionsPage: function (url, callback) {

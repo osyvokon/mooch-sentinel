@@ -1,13 +1,9 @@
 var MoochSentinel = {
-    statuses: {
-        gitHub: false,
-        codeForces: false,
-        okDate: null
-    },
+    statuses: [],
+    okDate: null,
 
     updateStatuses: function () {
         console.log("MoochSentinel.updateStatuses()");
-
         if (GitHub.hasLogin())
             GitHub.requestStatus();
 
@@ -17,16 +13,13 @@ var MoochSentinel = {
 
     isOk: function () {
         var me = this, result = false;
-        for (status in me.statuses) {
-            if (me.statuses.hasOwnProperty(status)) {
-                if (me.statuses[status]) {
-                    result = true;
-                    break;
-                }
+        $.each(me.statuses, function (idx, status) {
+            if (status.value) {
+                result = true;
             }
-        }
-        console.log('Mooch statuses: ' + me.statuses);
-        console.log('Mooch status: ' + result);
+        });
+        console.log('Mooch statuses: ', me.statuses);
+        console.log('Mooch status: ', result);
         return result;
     },
 
@@ -51,10 +44,10 @@ var MoochSentinel = {
     },
 
     isLastDateExpired: function () {
-        var okDate = this.statuses.okDate;
+        var okDate = this.okDate;
         var daysBetween = function (date1, date2) {
             // The number of milliseconds in one day
-            var ONE_DAY = 1000 * 60 * 60 * 24
+            var ONE_DAY = 1000 * 60 * 60 * 24;
             // Calculate the difference in milliseconds
             var difference_ms = Math.abs(date1.getTime() - date2.getTime());
             // Convert back to days and return
@@ -62,53 +55,81 @@ var MoochSentinel = {
         };
         return okDate == null
             || daysBetween(new Date(), okDate) >= 1;
+    },
+
+    hasStatuses: function () {
+        return this.statuses && this.statuses.length > 0;
+    },
+
+    findStatus: function (name) {
+        var me = this, result = null;
+        if (me.hasStatuses()) {
+            $.each(me.statuses, function (idx, status) {
+                if (status.name == name) {
+                    result = status;
+                }
+            })
+        }
+        return result;
+    },
+
+    setStatus: function (name, value) {
+        var me = this;
+        var existing = me.findStatus(name);
+        if (existing) {
+            existing.value = value;
+        }
+        else {
+            me.statuses.push({name: name, value: value});
+        }
     }
 }
 
+/***
+* request should look like {requestType: 'status', name: 'service name', ok: true/false, okDate: timestamp }
+*/
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         console.log('message', arguments);
         var wasOk = MoochSentinel.isOk();
-        if (request.codeForces) {
-            MoochSentinel.statuses.codeForces = request.ok;
+        if (request['requestType'] && request['requestType'] == 'status') {
+            MoochSentinel.setStatus(request.name, request.ok);
             MoochSentinel.render();
-        }
-        if (request.gitHub) {
-            MoochSentinel.statuses.gitHub = request.ok;
-            MoochSentinel.render();
-        }
-        var isOk = MoochSentinel.isOk();
-        if (isOk) {
-            var statusChanged = (isOk != wasOk);
-            var date = new Date();
-            if (statusChanged) {
-                console.log("Setting last OK date to " + date);
-                MoochSentinel.statuses.okDate = date;
-            }
-            else {
-                // status is OK and was OK, but the date might be stale
-                if (MoochSentinel.isLastDateExpired()) {
+            var isOk = MoochSentinel.isOk();
+            if (isOk) {
+                var statusChanged = (isOk != wasOk);
+                var date = request.okDate ? new Date(request.okDate): new Date();
+                if (statusChanged) {
                     console.log("Setting last OK date to " + date);
-                    MoochSentinel.statuses.okDate = date;
+                    MoochSentinel.okDate = date;
+                }
+                else {
+                    // status is OK and was OK, but the date might be stale
+                    if (MoochSentinel.isLastDateExpired()) {
+                        console.log("Setting last OK date to " + date);
+                        MoochSentinel.okDate = date;
+                    }
                 }
             }
         }
     });
 
 chrome.runtime.onMessageExternal.addListener(
-    function (request, sender, sendResponse) {
+    function (request, sender) {
         if (sender.update)
             MoochSentinel.updateStatuses();
     });
 
 chrome.webRequest.onBeforeRequest.addListener(
     function (details) {
-        if (!MoochSentinel.isOk()) {
+        // we don't have to block if no status has been checked yet
+        if (MoochSentinel.hasStatuses() && !MoochSentinel.isOk()) {
             var redirect = chrome.extension.getURL('blocked.html');
             console.log("interrupting request to ", details.url);
             console.log("redirect: " + redirect);
             return redirect ? { redirectUrl: redirect } : {cancel: true};
         }
+        return null;
     },
     {
         urls: MoochSentinel.blockedUrls().length > 0 ? MoochSentinel.blockedUrls() : ["<disabled>"],
