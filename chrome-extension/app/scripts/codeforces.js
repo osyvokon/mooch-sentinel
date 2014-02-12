@@ -39,7 +39,8 @@ var CodeForces = {
             var rows = $('table.status-frame-datatable tr:not(.first-row)', html);
             var submissions = $.map(rows, function (row) {
                 var $row = $(row);
-                var verdict = $row.children('.status-verdict-cell').children('span')[0].className;
+                var verdictCell = $row.children('.status-verdict-cell').children('span')[0];
+                var verdict = verdictCell? verdictCell.className : "";
                 return {
                     'id': $row.data('submissionId').toString().trim(),
                     'date': parseDate($row.children('td')[1].innerText),
