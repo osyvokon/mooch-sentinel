@@ -28,7 +28,8 @@
           });
 
           it("should include parsed datetime", function(done) {
-            expect(submission).to.have.property("date", Date(2013, 10, 15, 20, 19, 08)); //"15.10.2013 20:19:08");
+            expect(submission).to.have.property("date");
+            expect(submission.date.toUTCString()).to.be.equal("Fri, 15 Nov 2013 20:19:08 GMT");
             done();
           });
 

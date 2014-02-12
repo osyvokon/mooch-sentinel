@@ -18,9 +18,19 @@ var CodeForces = {
         console.log("Going to fetch Codeforces from " + url);
         me.parseSubmissionsPage(url, function (submissions) {
             console.log("CodeForces submissions", submissions);
-            // TODO implement status change
-//            me.ok = !!status.okay;
-//            me.sendStatus(lastOkDate);
+            var lastOkDate = null;
+            var yesterday = new Date();
+            yesterday.setDate(yesterday.getDate() - 1);
+
+            if (submissions.length == 0) {
+              me.ok = false;
+            } else {
+              lastOkDate = submissions.sort(function(a,b) { return a.date < b.date? 1 : -1 })[0].date;
+              me.ok = (lastOkDate >= yesterday);
+            }
+
+            console.log("Codeforces status: ", me.ok, ", lastOkDate: ", lastOkDate);
+            me.sendStatus(lastOkDate);
         });
     },
 
@@ -30,8 +40,8 @@ var CodeForces = {
 
     parseSubmissionsPage: function (url, callback) {
         function parseDate(str) {
-          var t = str.split(/\W/).map(Number);
-          return Date(t[2], t[1], t[0], t[3], t[4], t[5]);   // str example: 15.10.2013 20:19:08
+          var t = str.trim().split(/\W/).map(Number);
+          return new Date(Date.UTC(t[2], t[1]-1, t[0], t[3], t[4], t[5]));   // str example: 15.10.2013 20:19:08
         }
 
         $.get(url, function(html) {
