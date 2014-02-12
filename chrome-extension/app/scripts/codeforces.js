@@ -29,20 +29,26 @@ var CodeForces = {
     },
 
     parseSubmissionsPage: function (url, callback) {
-        var html = $('<div style="display: none"></div>');
-        html.load(url, function () {
+        function parseDate(str) {
+          var t = str.split(/\W/).map(Number);
+          return Date(t[2], t[1], t[0], t[3], t[4], t[5]);   // str example: 15.10.2013 20:19:08
+        }
+
+        $.get(url, function(html) {
+            var html = $(html);
             var rows = $('table.status-frame-datatable tr:not(.first-row)', html);
             var submissions = $.map(rows, function (row) {
                 var $row = $(row);
                 var verdict = $row.children('.status-verdict-cell').children('span')[0].className;
                 return {
-                    'id': $row.data('submissionId'),
-                    'date': $row.children('td')[1].innerText,
+                    'id': $row.data('submissionId').toString().trim(),
+                    'date': parseDate($row.children('td')[1].innerText),
                     'okay': (verdict == 'verdict-accepted')
                 }
             });
+            var successfulSubmissions = submissions.filter(function(submission) { return submission.okay });
 
-            callback(submissions);
+            callback(successfulSubmissions);
         });
     }
 }
