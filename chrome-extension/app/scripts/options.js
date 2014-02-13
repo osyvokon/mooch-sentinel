@@ -76,8 +76,8 @@ function addUrlInput(content) {
     }
     // looking for the last row: with "Add URL" button
     var tr = $('#blockedUrlTable').find('.addUrl');
-    $(tr).before('<tr><td><input type="text" maxlength="1024" value="' + content + '"/></td></tr>');
-    $(tr).prev().find('td').append($('<button class="removeUrlButton">Remove</button>').on('click', removeUrl));
+    $(tr).before('<tr><td><input type="text" class="form-control input-sm" maxlength="1024" value="' + content + '"/></td></tr>');
+    $(tr).prev().append($('<td><button class="removeUrlButton btn btn-sm">Remove</button></td>').on('click', removeUrl));
 }
 
 function removeUrl() {

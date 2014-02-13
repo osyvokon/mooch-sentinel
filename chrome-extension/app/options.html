@@ -2,32 +2,124 @@
 <html>
     <head>
         <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/bootstrap.css" rel="stylesheet">
         <!-- build:js scripts/options.js -->
         <script src="scripts/options.js"></script>
         <script src="scripts/jquery-2.0.3.js"></script>
         <!-- endbuild -->
     </head>
     <body>
-        <label>User login</label>
-        <input type="text" id="login">
 
-        <label>GitHub login</label>
-        <input type="text" id="ghLogin">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Mooch Sentinel</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#goals">Goals</a>
+            </li>
+            <li>
+              <a href="#blocked">Blocked URLs</a>
+            </li>
+          </ul>
 
-        <table id="blockedUrlTable">
-            <tr>
-                <th>URLs to block</th>
-            </tr>
-            </thead>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+
+      <div class="bs-docs-section">
+        <div class="page-header">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 id="goals">I want to...</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <!--h1 class="panel-title">Solve algorithmic challenges</h1-->
+              </div>
+              <div class="panel-body">
+                <form class="bs-example">
+                  <fieldset>
+                    <legend>Develop pet project</legend>
+                    <div class="form-group">
+                      <label for="login" class="control-label">GitHub login: </label>
+                      <input type="text" class="form-control" id="ghLogin" placeholder="Login">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <!--h1 class="panel-title">Solve algorithmic challenges</h1-->
+              </div>
+              <div class="panel-body">
+                <form class="bs-example">
+                  <fieldset>
+                    <legend>Practice algorithmic challenges</legend>
+                    <div class="form-group">
+                      <label for="login" class="control-label">Codeforces login: </label>
+                      <input type="text" class="form-control" id="login" placeholder="Login">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="bs-docs-sectionn">
+        <div class="page-header">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 id="blocked">Time killers:</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <table id="blockedUrlTable" class="table ">
             <tbody>
-                <tr class="addUrl">
-                    <td>
-                        <button id="addUrlButton">Add URL</button>
-                    </td>
-                </tr>
+              <tr class="addUrl">
+                <td>
+                  <button class="btn btn-default"id="addUrlButton">Add URL</button>
+                </td>
+              </tr>
             </tbody>
-        </table>
+          </table>
+        </div>
+      </div>
 
-        <button id="save">Save Options</button>
+      <hr/>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="center">
+            <button type="button" id="save" class="btn btn-primary btn-block btn-lg">Save Options</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
     </body>
 </html>
