@@ -29,10 +29,32 @@
 
           it("should include parsed datetime", function(done) {
             expect(submission).to.have.property("date");
-            expect(submission.date.toUTCString()).to.be.equal("Fri, 15 Nov 2013 20:19:08 GMT");
+            expect(submission.date.toUTCString()).to.be.equal("Tue, 15 Oct 2013 20:19:08 GMT");
             done();
           });
 
+        });
+    });
+
+    describe('GitHub plugin', function() {
+        it('should get repositories for the user', function(done) {
+            // TODO
+            done();
+        });
+        it('should get commits from repositories for the user', function(done) {
+            // TODO
+            done();
+        });
+        describe('GitHub commits parse', function() {
+            // TODO
+            it('should get last commit date', function(done) {
+                // TODO
+                done();
+            });
+            it('should set OK status', function(done) {
+                // TODO
+                done();
+            });
         });
     });
 
