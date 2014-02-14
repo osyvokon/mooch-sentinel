@@ -29,7 +29,7 @@
 
           it("should include parsed datetime", function(done) {
             expect(submission).to.have.property("date");
-            expect(submission.date.toUTCString()).to.be.equal("Fri, 15 Nov 2013 20:19:08 GMT");
+            expect(submission.date.toUTCString()).to.be.equal("Tue, 15 Oct 2013 20:19:08 GMT");
             done();
           });
 
