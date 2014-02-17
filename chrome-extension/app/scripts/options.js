@@ -31,6 +31,10 @@ function saveOptions() {
         })
     }
     localStorage['blockedUrls'] = urls;
+    $('#saveFeedback')[0].innerHTML = "The options had been saved!"
+    setTimeout(function () {
+        $('#saveFeedback')[0].innerHTML = "";
+    }, 2000);
 }
 
 function stripUrls(urls) {
