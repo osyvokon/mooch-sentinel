@@ -6,17 +6,26 @@ var GitHub = {
     requestStatus: function () {
         console.log('GitHub requestStatus');
         this.user = localStorage['gitHubLogin'];
-        this.initRepositories(this.checkLastCommit);
+        this.initRepositories(this.getRepositoriesUrl(), this.checkLastCommit);
     },
 
     hasLogin: function () {
         return !!localStorage['gitHubLogin'];
     },
 
-    initRepositories: function (callback) {
+    getRepositoriesUrl: function() {
+        return this.baseUrl + '/users/' + this.user + '/repos';
+    },
+
+    getRepositoryUrl: function(repo) {
+        var me = this;
+        console.log('Processing repo ' + repo);
+        return me.baseUrl + '/repos/' + me.user + '/' + repo + '/commits';
+    },
+
+    initRepositories: function (url, callback) {
         var me = this;
         if (me.user) {
-            var url = me.baseUrl + '/users/' + me.user + '/repos';
             this.getJsonData(url, true, function (data) {
                 if (data && data.length > 0) {
                     var repositories = [];
@@ -46,7 +55,7 @@ var GitHub = {
             for (var i = 0; i < me.repositories.length; i++) {
                 var repo = me.repositories[i];
                 console.log('Processing repo ' + repo);
-                var url = me.baseUrl + '/repos/' + me.user + '/' + repo + '/commits';
+                var url = me.getRepositoryUrl(repo);
 
                 // synchronous
                 me.getJsonData(url, false, function (data) {
