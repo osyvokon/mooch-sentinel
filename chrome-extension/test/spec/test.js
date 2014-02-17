@@ -39,6 +39,12 @@
     describe('GitHub plugin', function() {
         it('should get repositories for the user', function(done) {
             // TODO
+            GitHub.initRepositories('fixtures/githubrepos.json', function() {
+                expect(GitHub.repositories).to.be.a("Array");
+                expect(GitHub.repositories).to.have.length(2);
+                expect(GitHub.repositories[0]).to.be.equal("klout4j");
+                expect(GitHub.repositories[1]).to.be.equal("mooch-sentinel");
+            })
             done();
         });
         it('should get commits from repositories for the user', function(done) {
