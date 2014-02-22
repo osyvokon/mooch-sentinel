@@ -6,6 +6,7 @@
     "permissions": [
         "http://mooch.co.vu:5000/",
         "http://*/",
+        "https://*/",
         "alarms",
         "webRequest",
         "webRequestBlocking"
