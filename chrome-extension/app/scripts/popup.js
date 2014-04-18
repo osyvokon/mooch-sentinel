@@ -19,10 +19,13 @@ var Popup = {
             $("#" + id)[0].innerHTML = '';
         }
         else {
-            if (!label) {
-                label = status.name;
+            var label = "";
+            if (status.value) {
+              label = "<span class='label status-green'>done!</span>";
+            } else {
+              label = "<span class='label status-red'>you mooch!</span>";
             }
-            $("#" + id)[0].innerHTML = label + ": " + (status.value ? "You did it!" : "You mooch!");
+            $("#" + id)[0].innerHTML = label;
         }
     },
 

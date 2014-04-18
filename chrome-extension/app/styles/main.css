@@ -1,5 +1,29 @@
 /* Will be compiled down to a single stylesheet with your sass files */
 
-html {
+body {
     /* Defaults css for cssmin process */
+    font-family: sans-serif;
+}
+
+table tr td:empty {
+    width: 50px;
+}
+
+.label {
+    white-space: nowrap;
+    width: 100%;
+    font-weight: bold;
+    font-size: small;
+    padding: .2em .6em .3em;
+    border-radius: .25em;
+}
+
+.status-red {
+    color: white;
+    background-color: #dd4814;
+}
+
+.status-green {
+    color: white;
+    background-color: #2e953d;
 }
