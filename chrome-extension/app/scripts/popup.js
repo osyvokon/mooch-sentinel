@@ -62,10 +62,17 @@ var Popup = {
 
     requestUpdate: function () {
         Popup.getSentinel().updateStatuses();
-        Popup.refresh();    // FIXME: wait for update to arrive
     }
 
 }
+
+chrome.runtime.onMessage.addListener(
+    function (request, sender, sendResponse) {
+        if (request['requestType'] && request['requestType'] == 'statusChanged') {
+          console.log("Got message: statusChanged");
+          Popup.refresh();
+        }
+    });
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("btnRefresh").onclick = Popup.requestUpdate;

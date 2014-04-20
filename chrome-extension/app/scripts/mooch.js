@@ -86,8 +86,7 @@ var MoochSentinel = {
         var existing = me.findStatus(name);
         if (existing) {
             existing.value = value;
-        }
-        else {
+        } else {
             me.statuses.push({name: name, value: value});
         }
     },
@@ -135,6 +134,7 @@ chrome.runtime.onMessage.addListener(
             if (statusChanged) {
               console.log("Setting last OK date to " + date);
               MoochSentinel.okDate = date;
+              chrome.runtime.sendMessage({requestType: 'statusChanged', newStatus: isOk});
             } else if (isOk) {
               // status is OK and was OK, but the date might be stale
               if (MoochSentinel.isLastDateExpired()) {
