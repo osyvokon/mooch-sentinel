@@ -1,15 +1,20 @@
 'use strict';
 var Popup = {
 
-    render: function () {
-        console.log('rerendering popup...');
+    getSentinel: function () {
         var bg = chrome.extension.getBackgroundPage();
         if (!bg || !bg['MoochSentinel']) {
             console.log('No background page!');
-            return;
+            return null;
+        } else {
+            return bg['MoochSentinel'];
         }
-        var sentinel = bg['MoochSentinel'];
-        console.log('sentinel', sentinel);
+    },
+
+    render: function () {
+        console.log('rerendering popup...');
+        var sentinel = Popup.getSentinel();
+        if (!sentinel) return;
         this.setStatusText("status", sentinel.findStatus('codeForces'), "CodeForces puzzles");
         this.setStatusText("ghStatus", sentinel.findStatus('gitHub'), "GitHub commits");
     },
@@ -54,14 +59,17 @@ var Popup = {
         if (this.checkCodeForcesLogin() || this.checkGitHubLogin()) {
             this.render();
         }
+    },
+
+    requestUpdate: function () {
+        Popup.getSentinel().updateStatuses();
+        Popup.refresh();    // FIXME: wait for update to arrive
     }
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById("btnRefresh").onclick = function () {
-        MoochSentinel.updateStatuses();
-        Popup.refresh();
-    }
+    document.getElementById("btnRefresh").onclick = Popup.requestUpdate;
     Popup.refresh();
 });
 
