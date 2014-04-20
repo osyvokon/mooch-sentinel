@@ -84,8 +84,33 @@ var MoochSentinel = {
         else {
             me.statuses.push({name: name, value: value});
         }
+    },
+
+
+    updateBlockingFilter: function () {
+        var options = {
+            urls: MoochSentinel.blockedUrls().length > 0 ? MoochSentinel.blockedUrls() : ["<disabled>"],
+            types: ["main_frame"]
+        }
+
+      chrome.webRequest.onBeforeRequest.removeListener(MoochSentinel._blockingFilter);
+      chrome.webRequest.onBeforeRequest.addListener(MoochSentinel._blockingFilter, options, ["blocking"]);
+    },
+
+    _blockingFilter: function (details) {
+          // we don't have to block if no status has been checked yet
+          if (MoochSentinel.hasStatuses() && !MoochSentinel.isOk()) {
+            var redirect = chrome.extension.getURL('blocked.html');
+            console.log("interrupting request to ", details.url);
+            console.log("redirect: " + redirect);
+            return redirect ? { redirectUrl: redirect } : {cancel: true};
+          }
+          return null;
     }
+
 }
+
+
 
 /***
 * request should look like {requestType: 'status', name: 'service name', ok: true/false, okDate: timestamp }
@@ -114,6 +139,11 @@ chrome.runtime.onMessage.addListener(
                 }
             }
         }
+
+        if (request['requestType'] && request['requestType'] == 'updateBlockingFilter') {
+          console.log("Recieved updateBlockingFilter");
+          MoochSentinel.updateBlockingFilter();
+        }
     });
 
 chrome.runtime.onMessageExternal.addListener(
@@ -122,19 +152,5 @@ chrome.runtime.onMessageExternal.addListener(
             MoochSentinel.updateStatuses();
     });
 
-chrome.webRequest.onBeforeRequest.addListener(
-    function (details) {
-        // we don't have to block if no status has been checked yet
-        if (MoochSentinel.hasStatuses() && !MoochSentinel.isOk()) {
-            var redirect = chrome.extension.getURL('blocked.html');
-            console.log("interrupting request to ", details.url);
-            console.log("redirect: " + redirect);
-            return redirect ? { redirectUrl: redirect } : {cancel: true};
-        }
-        return null;
-    },
-    {
-        urls: MoochSentinel.blockedUrls().length > 0 ? MoochSentinel.blockedUrls() : ["<disabled>"],
-        types: ["main_frame"]
-    },
-    ["blocking"]);
+
+MoochSentinel.updateBlockingFilter();
