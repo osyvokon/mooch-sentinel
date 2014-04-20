@@ -43,6 +43,14 @@ var MoochSentinel = {
         }
     },
 
+    isDateValid: function (date) {
+        var sameDay = function (date1, date2) {
+          return date1.toDateString() == date2.toDateString();
+        };
+        if (typeof date.toDateString !== 'function') date = new Date(date);
+        return date && sameDay(date, new Date());
+    },
+
     isLastDateExpired: function () {
         var okDate = this.okDate;
         var daysBetween = function (date1, date2) {
@@ -53,10 +61,8 @@ var MoochSentinel = {
             // Convert back to days and return
             return Math.round(difference_ms / ONE_DAY)
         };
-        var sameDay = function (date1, date2) {
-          return date1.toDateString() == date2.toDateString();
-        };
-        return okDate == null || sameDay(okDate, new Date());
+        console.log("isLastDateExpired(", okDate, new Date());
+        return !this.isDateValid(okDate);
     },
 
     hasStatuses: function () {
@@ -120,23 +126,21 @@ chrome.runtime.onMessage.addListener(
         console.log('message', arguments);
         var wasOk = MoochSentinel.isOk();
         if (request['requestType'] && request['requestType'] == 'status') {
+            request.ok = MoochSentinel.isDateValid(request.okDate);
             MoochSentinel.setStatus(request.name, request.ok);
             MoochSentinel.render();
             var isOk = MoochSentinel.isOk();
-            if (isOk) {
-                var statusChanged = (isOk != wasOk);
-                var date = request.okDate ? new Date(request.okDate): new Date();
-                if (statusChanged) {
-                    console.log("Setting last OK date to " + date);
-                    MoochSentinel.okDate = date;
-                }
-                else {
-                    // status is OK and was OK, but the date might be stale
-                    if (MoochSentinel.isLastDateExpired()) {
-                        console.log("Setting last OK date to " + date);
-                        MoochSentinel.okDate = date;
-                    }
-                }
+            var statusChanged = (isOk != wasOk);
+            var date = request.okDate ? new Date(request.okDate): new Date();
+            if (statusChanged) {
+              console.log("Setting last OK date to " + date);
+              MoochSentinel.okDate = date;
+            } else if (isOk) {
+              // status is OK and was OK, but the date might be stale
+              if (MoochSentinel.isLastDateExpired()) {
+                console.log("Setting last OK date to " + date);
+                MoochSentinel.okDate = date;
+              }
             }
         }
 
