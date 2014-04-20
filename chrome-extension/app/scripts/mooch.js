@@ -53,8 +53,10 @@ var MoochSentinel = {
             // Convert back to days and return
             return Math.round(difference_ms / ONE_DAY)
         };
-        return okDate == null
-            || daysBetween(new Date(), okDate) >= 1;
+        var sameDay = function (date1, date2) {
+          return date1.toDateString() == date2.toDateString();
+        };
+        return okDate == null || sameDay(okDate, new Date());
     },
 
     hasStatuses: function () {
