@@ -13,5 +13,5 @@ challenges, but we are planning to add more!
 
 ## Contributors
 
-Aleksey Sivokon (https://github.com/asivokon)
-Marina Chernyavskaya (https://github.com/asivokon)
+* Aleksey Sivokon (https://github.com/asivokon)
+* Marina Chernyavskaya (https://github.com/mchernyavskaya)
