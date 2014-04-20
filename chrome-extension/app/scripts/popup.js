@@ -20,18 +20,17 @@ var Popup = {
     },
 
     setStatusText: function (id, status, label) {
+        console.log("setStatusText: ", id, status);
+        var label = "";
         if (!status) {
-            $("#" + id)[0].innerHTML = '';
+            label = "<span class='label status-grey'>disabled</span>";
+        } else if (status.value) {
+            label = "<span class='label status-green'>done!</span>";
+        } else {
+            label = "<span class='label status-red'>you mooch!</span>";
         }
-        else {
-            var label = "";
-            if (status.value) {
-              label = "<span class='label status-green'>done!</span>";
-            } else {
-              label = "<span class='label status-red'>you mooch!</span>";
-            }
-            $("#" + id)[0].innerHTML = label;
-        }
+        console.log(label);
+        $("#" + id)[0].innerHTML = label;
     },
 
     checkCodeForcesLogin: function () {

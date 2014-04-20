@@ -20,10 +20,15 @@ table tr td:empty {
 
 .status-red {
     color: white;
-    background-color: #dd4814;
+    background-color: #ff4136;
 }
 
 .status-green {
     color: white;
     background-color: #2e953d;
+}
+
+.status-grey {
+    color: white;
+    background-color: #999999;
 }
