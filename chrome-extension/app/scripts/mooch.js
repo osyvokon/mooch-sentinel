@@ -45,9 +45,9 @@ var MoochSentinel = {
 
     isDateValid: function (date) {
         var sameDay = function (date1, date2) {
+          if (typeof date1.toDateString !== 'function') date1 = new Date(date1);
           return date1.toDateString() == date2.toDateString();
         };
-        if (typeof date.toDateString !== 'function') date = new Date(date);
         return date && sameDay(date, new Date());
     },
 
