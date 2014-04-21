@@ -12,24 +12,21 @@ chrome.runtime.onInstalled.addListener(function (details) {
 chrome.alarms.onAlarm.addListener(function (alarm) {
     console.log('on alarm', alarm);
     if (alarm.name == 'moochStatusRefresh') {
-        if (!MoochSentinel.isOk() || MoochSentinel.isLastDateExpired()) {
-            if (GitHub.hasLogin()) {
-                console.log('requesting for GitHub...');
-                GitHub.requestStatus();
-            }
-            else {
-                console.log('No GitHub login.');
-            }
-            if (CodeForces.hasLogin()) {
-                console.log('requesting for CodeForces...');
-                CodeForces.requestStatus();
-            }
-            else {
-                console.log('No CodeForces login.');
-            }
+
+        if (GitHub.hasLogin()) {
+          var status = MoochSentinel.findStatus('gitHub');
+          if (!status || !status.value || !MoochSentinel.isDateValid(status.okDate)) {
+            console.log('requesting for GitHub...');
+            GitHub.requestStatus();
+          }
         }
-        else {
-            console.log("Last OK date is still valid, skip checking...")
+
+        if (CodeForces.hasLogin()) {
+          var status = MoochSentinel.findStatus('codeForces');
+          if (!status || !status.value || !MoochSentinel.isDateValid(status.okDate)) {
+            console.log('requesting for CodeForces...');
+            CodeForces.requestStatus();
+          }
         }
     }
 });

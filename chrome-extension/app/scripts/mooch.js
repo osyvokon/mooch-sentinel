@@ -81,13 +81,14 @@ var MoochSentinel = {
         return result;
     },
 
-    setStatus: function (name, value) {
+    setStatus: function (name, value, okDate) {
         var me = this;
         var existing = me.findStatus(name);
         if (existing) {
             existing.value = value;
+            existing.okDate = okDate;
         } else {
-            me.statuses.push({name: name, value: value});
+            me.statuses.push({name: name, value: value, okDate: okDate});
         }
     },
 
@@ -126,7 +127,7 @@ chrome.runtime.onMessage.addListener(
         var wasOk = MoochSentinel.isOk();
         if (request['requestType'] && request['requestType'] == 'status') {
             request.ok = MoochSentinel.isDateValid(request.okDate);
-            MoochSentinel.setStatus(request.name, request.ok);
+            MoochSentinel.setStatus(request.name, request.ok, request.okDate);
             MoochSentinel.render();
             var isOk = MoochSentinel.isOk();
             var statusChanged = (isOk != wasOk);
