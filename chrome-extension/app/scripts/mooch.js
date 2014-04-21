@@ -121,9 +121,10 @@ chrome.runtime.onMessage.addListener(
             }
         }
 
-        if (request['requestType'] && request['requestType'] == 'updateBlockingFilter') {
-          console.log("Recieved updateBlockingFilter");
+        if (request['requestType'] && request['requestType'] == 'optionsChanged') {
+          console.log("Recieved optionsChanged message");
           MoochSentinel.updateBlockingFilter();
+          MoochSentinel.updateStatuses();
         }
     });
 

@@ -30,7 +30,8 @@ function saveOptions() {
         })
     }
     localStorage['blockedUrls'] = urls;
-    chrome.runtime.sendMessage({requestType: 'updateBlockingFilter'});
+    chrome.runtime.sendMessage({requestType: 'optionsChanged'});
+
     $('#saveFeedback')[0].innerHTML = "The options had been saved!"
     setTimeout(function () {
         $('#saveFeedback')[0].innerHTML = "";
