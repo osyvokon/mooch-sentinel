@@ -36,7 +36,7 @@ var Popup = {
     checkCodeForcesLogin: function () {
         console.log('check CodeForces login...');
         var el = $('#status')[0];
-        if (!localStorage['moochLogin']) {
+        if (!localStorage['codeforcesLogin']) {
             el.innerText = 'Please set CodeForces user login on options page';
             return false;
         }

@@ -1,10 +1,9 @@
 'use strict';
 
 function saveOptions() {
-    var login = $('#login')[0].value;
-    localStorage['moochLogin'] = login;
-    var gitHubLogin = $('#ghLogin')[0].value;
-    localStorage['gitHubLogin'] = gitHubLogin;
+    localStorage['codeforcesLogin'] = $('#cfLogin')[0].value;
+    localStorage['gitHubLogin'] = $('#ghLogin')[0].value;
+
     var urlInputs = $('#blockedUrlTable').find('input');
     var urls = [];
 
@@ -54,9 +53,9 @@ function stripUrls(urls) {
 }
 
 function restoreOptions() {
-    var login = localStorage['moochLogin'];
-    if (login) {
-        $('#login')[0].value = login;
+    var cfLogin = localStorage['codeforcesLogin'];
+    if (cfLogin) {
+        $('#cfLogin')[0].value = login;
     }
     var gitHubLogin = localStorage['gitHubLogin'];
     if (gitHubLogin) {

@@ -2,13 +2,13 @@ var CodeForces = {
     ok: false,
 
     hasLogin: function () {
-        return !!localStorage['moochLogin'];
+        return !!localStorage['codeforcesLogin'];
     },
 
     requestStatus: function () {
         var me = this;
         me.ok = false;
-        var user = localStorage['moochLogin'];
+        var user = localStorage['codeforcesLogin'];
         if (!user) {
             console.log("User not set for CodeForces, nothing to do");
             return;
