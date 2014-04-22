@@ -64,7 +64,13 @@ function restoreOptions() {
     }
     var blockedUrls = localStorage['blockedUrls'] ? localStorage['blockedUrls'].split(',') : [];
     if (blockedUrls.length == 0) {
-        blockedUrls.push("facebook.com", "twitter.com");
+        blockedUrls.push(
+            "facebook.com",
+            "twitter.com",
+            "reddit.com",
+            "slashdot.org",
+            "habrahabr.ru",
+            "vk.com");
     }
     blockedUrls = stripUrls(blockedUrls);
     $.each(blockedUrls, function (idx, url) {
