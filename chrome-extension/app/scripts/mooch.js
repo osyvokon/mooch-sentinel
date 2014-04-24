@@ -117,7 +117,7 @@ chrome.runtime.onMessage.addListener(
 
             var statusChanged = (MoochSentinel.isOk() != wasOk);
             if (statusChanged) {
-              chrome.runtime.sendMessage({requestType: 'statusChanged', newStatus: isOk});
+              chrome.runtime.sendMessage({requestType: 'statusChanged'});
             }
         }
 
