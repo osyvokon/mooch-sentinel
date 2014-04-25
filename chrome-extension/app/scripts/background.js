@@ -21,6 +21,16 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
           }
         }
 
+        if (BitBucket.hasLogin()) {
+          var status = MoochSentinel.findStatus('bitbucket');
+          if (!status || !status.value || !MoochSentinel.isDateValid(status.okDate)) {
+            console.log('requesting for BitBucket...');
+            BitBucket.requestStatus();
+          }
+        } else {
+          console.log("no bitbucket login");
+        }
+
         if (CodeForces.hasLogin()) {
           var status = MoochSentinel.findStatus('codeForces');
           if (!status || !status.value || !MoochSentinel.isDateValid(status.okDate)) {

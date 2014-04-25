@@ -3,6 +3,8 @@
 function saveOptions() {
     localStorage['codeforcesLogin'] = $('#cfLogin')[0].value;
     localStorage['gitHubLogin'] = $('#ghLogin')[0].value;
+    localStorage['bitbucketLogin'] = $('#bitbucketLogin')[0].value;
+    localStorage['bitbucketRepo'] = $('#bitbucketRepo')[0].value;
 
     var urlInputs = $('#blockedUrlTable').find('input');
     var urls = [];
@@ -62,6 +64,14 @@ function restoreOptions() {
     if (gitHubLogin) {
         $('#ghLogin')[0].value = gitHubLogin;
     }
+
+    if (localStorage['bitbucketLogin'])
+      $("#bitbucketLogin")[0].value = localStorage['bitbucketLogin'];
+
+    if (localStorage['bitbucketRepo'])
+      $("#bitbucketRepo")[0].value = localStorage['bitbucketRepo'];
+
+
     var blockedUrls = localStorage['blockedUrls'] ? localStorage['blockedUrls'].split(',') : [];
     if (blockedUrls.length == 0) {
         blockedUrls.push(

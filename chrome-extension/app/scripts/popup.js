@@ -17,6 +17,7 @@ var Popup = {
         if (!sentinel) return;
         this.setStatusText("status", sentinel.findStatus('codeForces'), "CodeForces puzzles");
         this.setStatusText("ghStatus", sentinel.findStatus('gitHub'), "GitHub commits");
+        this.setStatusText("bitbucketStatus", sentinel.findStatus('bitbucket'), "BitBucket commits");
     },
 
     setStatusText: function (id, status, label) {
@@ -34,7 +35,6 @@ var Popup = {
     },
 
     checkCodeForcesLogin: function () {
-        console.log('check CodeForces login...');
         var el = $('#status')[0];
         if (!localStorage['codeforcesLogin']) {
             el.innerText = 'Please set CodeForces user login on options page';
@@ -44,7 +44,6 @@ var Popup = {
     },
 
     checkGitHubLogin: function () {
-        console.log('check GitHub login...');
         var el = $('#ghStatus')[0];
         if (!localStorage['gitHubLogin']) {
             el.innerText = 'Please set GitHub user login on options page';
@@ -53,9 +52,18 @@ var Popup = {
         return true;
     },
 
+    checkBitBucketLogin: function () {
+        var el = $('#bitbucketStatus')[0];
+        if (!localStorage['bitbucketLogin']) {
+            el.innerText = 'Please set BitBucket user login on options page';
+            return false;
+        }
+        return true;
+    },
+
     refresh: function () {
         console.log('Popup refresh...');
-        if (this.checkCodeForcesLogin() || this.checkGitHubLogin()) {
+        if (this.checkCodeForcesLogin() || this.checkGitHubLogin() || this.checkBitBucketLogin()) {     // TODO: do we still need this?
             this.render();
         }
     },

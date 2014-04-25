@@ -19,6 +19,7 @@
         "scripts": [
             "scripts/jquery-2.0.3.js",
             "scripts/github.js",
+            "scripts/bitbucket.js",
             "scripts/codeforces.js",
             "scripts/mooch.js",
             "scripts/background.js"

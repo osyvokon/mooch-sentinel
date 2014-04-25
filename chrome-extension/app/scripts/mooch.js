@@ -6,6 +6,9 @@ var MoochSentinel = {
         if (GitHub.hasLogin())
             GitHub.requestStatus();
 
+        if (BitBucket.hasLogin())
+            BitBucket.requestStatus();
+
         if (CodeForces.hasLogin())
             CodeForces.requestStatus();
     },
