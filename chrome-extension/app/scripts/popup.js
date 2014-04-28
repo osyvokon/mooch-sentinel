@@ -27,6 +27,8 @@ var Popup = {
             label = "<span class='label status-grey'>disabled</span>";
         } else if (status.value) {
             label = "<span class='label status-green'>done!</span>";
+        } else if (status.error) {
+            label = "<span class='label status-red'>" + status.error + "<span>";
         } else {
             label = "<span class='label status-red'>you mooch!</span>";
         }

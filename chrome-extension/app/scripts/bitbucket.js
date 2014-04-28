@@ -4,9 +4,19 @@ var BitBucket = {
     return !!localStorage['bitbucketLogin'] && !!localStorage['bitbucketRepo'];
   },
 
-  getLastChangeset: function (user, repo, callback) {
-    var url = "https://bitbucket.org/api/1.0/repositories/" + user + "/" + repo + "/changesets/?limit=1";
-    $.get(url, callback);
+  getLastChangeset: function (user, repo, callback, fail) {
+    var url = "https://bitbucket.org/api/1.0/repositories/" + user + "/" + repo + "/changesets/";
+    $.ajax({
+      dataType: "json",
+      url: url,
+      data: {limit: 1},
+      success: callback,
+      statusCode: {
+        403: function () {
+          fail("Forbidden: please, sign in into your accout")
+        }
+      }
+    });
   },
 
   requestStatus: function () {
@@ -27,7 +37,17 @@ var BitBucket = {
         ok: null,        // TODO: deprecated, get rid of this
         okDate: changesets.length? Date.parse(changesets[0].timestamp) : null
       });
-    })
+    }, function (reason) {
+      console.log("BB error", reason);
+      chrome.runtime.sendMessage({
+        requestType: 'status',
+        name: 'bitbucket',
+        ok: null,        // TODO: deprecated, get rid of this
+        okDate: null,
+        error: reason
+      });
+
+    });
   }
 
 }
