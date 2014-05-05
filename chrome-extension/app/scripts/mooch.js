@@ -79,6 +79,15 @@ var MoochSentinel = {
         } else {
             me.statuses.push({name: name, value: value, okDate: okDate, error: error});
         }
+
+        if (true || value) {
+          var historyDates = localStorage['historyDates'] || "";
+          if (historyDates.indexOf(okDate) == -1) {
+            historyDates += ",";
+            historyDates += okDate / 1000;
+          }
+          localStorage['historyDates'] = historyDates;
+        }
     },
 
 

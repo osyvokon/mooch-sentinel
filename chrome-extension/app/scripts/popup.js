@@ -1,6 +1,30 @@
 'use strict';
 var Popup = {
 
+    init: function () {
+      Popup.refresh();
+      var cal = new CalHeatMap();
+      var startDate = new Date();
+      startDate.setMonth(startDate.getMonth() - 2);
+      var data = {};
+      var historyDates = localStorage['historyDates'] || "";
+      historyDates.split(",").forEach( function (date) {
+        if (date != "") {
+          data[date] = 16;
+        }
+      });
+
+      cal.init({
+        domain: "month",
+        range: 3,
+        start: startDate,
+        cellSize: 10,
+        cellRadius: 2,
+        highlight: "now",
+        data: data
+      });
+    },
+
     getSentinel: function () {
         var bg = chrome.extension.getBackgroundPage();
         if (!bg || !bg['MoochSentinel']) {
@@ -86,6 +110,6 @@ chrome.runtime.onMessage.addListener(
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("btnRefresh").onclick = Popup.requestUpdate;
-    Popup.refresh();
+    Popup.init();
 });
 

@@ -5,7 +5,7 @@
         <link href="bower_components/cal-heatmap/cal-heatmap.css" rel="stylesheet">
         <!-- build:js scripts/popup.js -->
         <script src="bower_components/d3/d3.min.js"></script>
-        <!--<script src="bower_components/cal-heatmap/cal-heatmap.min.js"></script>-->
+        <script src="bower_components/cal-heatmap/cal-heatmap.min.js"></script>
         <script src="scripts/jquery-2.0.3.js"></script>
         <!-- script src="scripts/mooch.js"></script -->
         <script src="scripts/github.js"></script>
@@ -15,6 +15,7 @@
         <!-- endbuild -->
     </head>
     <body>
+      <h3>Current status</h3>
       <table>
         <tr>
           <td>CodeForces: </td>
@@ -33,11 +34,12 @@
           <td></td>
           <td><p id="bitbucketStatus"></p></td>
         </tr>
+      </table>
 
 
-        <!--<h3>History</h3>-->
-        <!--<div id="cal-heatmap"></div>-->
+      <h3>History</h3>
+      <div id="cal-heatmap"></div>
 
-        <button id="btnRefresh">Refresh</button>
+      <div align="right"><button id="btnRefresh">Refresh</button></div>
     </body>
 </html>
