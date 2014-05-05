@@ -21,6 +21,7 @@ var Popup = {
         cellSize: 10,
         cellRadius: 2,
         highlight: "now",
+        displayLegend: false,
         data: data
       });
     },
