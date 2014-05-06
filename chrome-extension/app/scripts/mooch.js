@@ -80,7 +80,7 @@ var MoochSentinel = {
             me.statuses.push({name: name, value: value, okDate: okDate, error: error});
         }
 
-        if (true || value) {
+        if (value) {
           var historyDates = localStorage['historyDates'] || "";
           if (historyDates.indexOf(okDate) == -1) {
             historyDates += ",";

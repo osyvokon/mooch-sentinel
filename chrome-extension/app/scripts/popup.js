@@ -1,20 +1,13 @@
 'use strict';
 var Popup = {
 
+    cal: null,
+
     init: function () {
-      Popup.refresh();
-      var cal = new CalHeatMap();
       var startDate = new Date();
       startDate.setMonth(startDate.getMonth() - 2);
-      var data = {};
-      var historyDates = localStorage['historyDates'] || "";
-      historyDates.split(",").forEach( function (date) {
-        if (date != "") {
-          data[date] = 16;
-        }
-      });
-
-      cal.init({
+      Popup.cal = new CalHeatMap();
+      Popup.cal.init({
         domain: "month",
         range: 3,
         start: startDate,
@@ -22,8 +15,9 @@ var Popup = {
         cellRadius: 2,
         highlight: "now",
         displayLegend: false,
-        data: data
+        data: {}
       });
+      Popup.refresh();
     },
 
     getSentinel: function () {
@@ -43,6 +37,15 @@ var Popup = {
         this.setStatusText("status", sentinel.findStatus('codeForces'), "CodeForces puzzles");
         this.setStatusText("ghStatus", sentinel.findStatus('gitHub'), "GitHub commits");
         this.setStatusText("bitbucketStatus", sentinel.findStatus('bitbucket'), "BitBucket commits");
+
+        var data = {};
+        var historyDates = localStorage['historyDates'] || "";
+        historyDates.split(",").forEach( function (date) {
+          if (date != "") {
+            data[date] = 16;
+          }
+        });
+        Popup.cal.update(data);
     },
 
     setStatusText: function (id, status, label) {
