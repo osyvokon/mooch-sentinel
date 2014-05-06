@@ -82,7 +82,7 @@ var MoochSentinel = {
 
         if (value) {
           var historyDates = localStorage['historyDates'] || "";
-          if (historyDates.indexOf(okDate) == -1) {
+          if (historyDates.indexOf(okDate / 1000) == -1) {
             historyDates += ",";
             historyDates += okDate / 1000;
           }
