@@ -58,7 +58,7 @@ function stripUrls(urls) {
 function restoreOptions() {
     var cfLogin = localStorage['codeforcesLogin'];
     if (cfLogin) {
-        $('#cfLogin')[0].value = login;
+        $('#cfLogin')[0].value = cfLogin;
     }
     var gitHubLogin = localStorage['gitHubLogin'];
     if (gitHubLogin) {
