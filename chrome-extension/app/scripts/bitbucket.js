@@ -14,6 +14,9 @@ var BitBucket = {
       statusCode: {
         403: function () {
           fail("Forbidden: please, sign in into your accout")
+        },
+        404: function () {
+          fail("Not found: please, sign in or check repository name")
         }
       }
     });
