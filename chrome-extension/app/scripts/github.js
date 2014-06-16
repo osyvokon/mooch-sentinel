@@ -78,26 +78,13 @@ var GitHub = {
                 });
             }
         }
-        console.log('Checking last commit date...');
-        if (lastCommitDate) {
-            var yesterday = new Date();
-            yesterday.setDate(yesterday.getDate() - 1);
-            if (lastCommitDate >= yesterday) {
-                console.log('GitHub commit date good!');
-                me.ok = true;
-                me.sendStatus(lastCommitDate);
-                return;
-            }
-        }
-        // no hands, no cookies
-        console.log('no hands, no cookies');
-        me.ok = false;
+        console.log('Sending last commit date...');
         me.sendStatus(lastCommitDate);
     },
 
     sendStatus: function(okDate) {
         console.log("GitHub set status", okDate);
-        chrome.runtime.sendMessage({requestType: 'status', name: 'gitHub', ok: this.ok, okDate: okDate.getTime()});
+        chrome.runtime.sendMessage({requestType: 'status', name: 'gitHub', okDate: okDate.getTime()});
     },
 
     getJsonData: function (url, async, callback) {

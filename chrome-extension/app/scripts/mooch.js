@@ -117,15 +117,15 @@ var MoochSentinel = {
 
 
 /***
-* request should look like {requestType: 'status', name: 'service name', ok: true/false, okDate: timestamp }
+* request should look like {requestType: 'status', name: 'service name', okDate: timestamp }
 */
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         console.log('message', arguments);
         var wasOk = MoochSentinel.isOk();
         if (request['requestType'] && request['requestType'] == 'status') {
-            request.ok = MoochSentinel.isDateValid(request.okDate) && !request.error;
-            MoochSentinel.setStatus(request.name, request.ok, request.okDate, request.error);
+            var ok = MoochSentinel.isDateValid(request.okDate) && !request.error;
+            MoochSentinel.setStatus(request.name, ok, request.okDate, request.error);
             MoochSentinel.render();
 
             var statusChanged = (MoochSentinel.isOk() != wasOk);

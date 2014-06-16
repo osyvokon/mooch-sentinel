@@ -34,7 +34,6 @@ var BitBucket = {
       chrome.runtime.sendMessage({
         requestType: 'status',
         name: 'bitbucket',
-        ok: null,        // TODO: deprecated, get rid of this
         okDate: changesets.length? Date.parse(changesets[0].timestamp) : null
       });
     }, function (reason) {
@@ -42,7 +41,6 @@ var BitBucket = {
       chrome.runtime.sendMessage({
         requestType: 'status',
         name: 'bitbucket',
-        ok: null,        // TODO: deprecated, get rid of this
         okDate: null,
         error: reason
       });

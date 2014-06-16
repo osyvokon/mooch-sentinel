@@ -1,5 +1,4 @@
 var CodeForces = {
-    ok: false,
 
     hasLogin: function () {
         return !!localStorage['codeforcesLogin'];
@@ -7,7 +6,6 @@ var CodeForces = {
 
     requestStatus: function () {
         var me = this;
-        me.ok = false;
         var user = localStorage['codeforcesLogin'];
         if (!user) {
             console.log("User not set for CodeForces, nothing to do");
@@ -18,24 +16,20 @@ var CodeForces = {
         console.log("Going to fetch Codeforces from " + url);
         me.parseSubmissionsPage(url, function (submissions) {
             console.log("CodeForces submissions", submissions);
-            var lastOkDate = null;
-            var yesterday = new Date();
-            yesterday.setDate(yesterday.getDate() - 1);
-
-            if (submissions.length == 0) {
-              me.ok = false;
-            } else {
+            var lastOkDate;
+            if (submissions.length > 0) {
               lastOkDate = submissions.sort(function(a,b) { return a.date < b.date? 1 : -1 })[0].date;
-              me.ok = (lastOkDate >= yesterday);
+            } else {
+              lastOkDate = null;
             }
 
-            console.log("Codeforces status: ", me.ok, ", lastOkDate: ", lastOkDate);
+            console.log("Codeforces lastOkDate: ", lastOkDate);
             me.sendStatus(lastOkDate);
         });
     },
 
     sendStatus: function (okDate) {
-        chrome.runtime.sendMessage({requestType: 'status', name: 'codeForces', ok: this.ok, okDate: okDate});
+        chrome.runtime.sendMessage({requestType: 'status', name: 'codeForces', okDate: okDate});
     },
 
     parseSubmissionsPage: function (url, callback) {
